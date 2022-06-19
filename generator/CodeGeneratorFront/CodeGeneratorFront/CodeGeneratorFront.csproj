@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PluralizeService.Core" Version="1.2.21147.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Ahc.Club.Application\Ahc.Club.Application.csproj" />
+    <ProjectReference Include="..\..\..\src\Ahc.Club.Core\Ahc.Club.Core.csproj" />
+  </ItemGroup>
+
+</Project>

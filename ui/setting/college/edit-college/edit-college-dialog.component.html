@@ -1,0 +1,79 @@
+<form class="form-horizontal" autocomplete="off" #editWriterForm="ngForm" (ngSubmit)="save()">
+    <nb-card>
+        <nb-card-header>
+            {{'EditWriter' | localize}}
+        </nb-card-header>
+        <nb-card-body>
+            <div>
+                    <!--Name-->
+<div class="form-group row required">
+    <label class="col-md-3 col-form-label" for="name">
+        {{ "Name" | localize }}
+    </label>
+    <div class="col-md-9">
+        <input nbInput type="text" class="e-input as-sy-input"
+               name="name"
+               id="name"
+               minlength="2"
+               fullWidth 
+               required
+               autocomplete="off"
+               [(ngModel)]="college.name"
+               #nameModel="ngModel"
+               #nameEl />
+        <abp-validation-summary [control]="nameModel" [controlEl]="nameEl">
+        </abp-validation-summary>
+    </div>
+</div>
+    <!--Name2-->
+<div class="form-group row required">
+    <label class="col-md-3 col-form-label" for="name2">
+        {{ "Name2" | localize }}
+    </label>
+    <div class="col-md-9">
+        <input nbInput type="text" class="e-input as-sy-input"
+               name="name2"
+               id="name2"
+               minlength="2"
+               fullWidth 
+               required
+               autocomplete="off"
+               [(ngModel)]="college.name2"
+               #name2Model="ngModel"
+               #name2El />
+        <abp-validation-summary [control]="name2Model" [controlEl]="name2El">
+        </abp-validation-summary>
+    </div>
+</div>
+    <!--UniversityId-->
+<div class="form-group row required">
+    <label class="col-md-3 col-form-label" for="universityId">
+        {{ "UniversityId" | localize }}
+    </label>
+    <div class="col-md-9">
+        <ejs-numerictextbox id='universityId'
+                            name='universityId'
+                            format='N'
+                            min="1"
+                            cssClass="as-sy-input"
+                            [enableRtl]="true"
+                            required
+                            [(ngModel)]="college.universityId"
+                            #universityIdModel="ngModel"
+                            #universityIdEl></ejs-numerictextbox>
+        <abp-validation-summary [control]="universityIdModel" [controlEl]="universityIdEl">
+        </abp-validation-summary>
+    </div>
+</div>
+
+
+
+
+            </div>
+        </nb-card-body>
+        <nb-card-footer>
+            <abp-modal-footer [cancelDisabled]="saving" [saveDisabled]="!editWriterForm.form.valid || saving"
+            (onCancelClick)="dialogRef.close()"></abp-modal-footer>
+        </nb-card-footer>
+    </nb-card>
+</form>

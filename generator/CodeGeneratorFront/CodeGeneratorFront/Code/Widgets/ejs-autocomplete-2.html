@@ -1,0 +1,22 @@
+<!--Fff-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="fff">
+            {{ "Fff" | localize }}
+        </label>
+        <div class="col-md-9">
+            <ejs-autocomplete id='fff'
+                              name='fff'
+                              cssClass="as-sy-input"
+                              [dataSource]='fffs'
+                              [autofill]='true'
+                              [enableRtl]="true"
+                              [fields]='fffAutoCompleteFields'
+                              [(ngModel)]="xxx.fff.name"
+                              #fffModel="ngModel"
+                              #fffEl></ejs-autocomplete>
+            <abp-validation-summary [control]="fffModel" [controlEl]="fffEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>

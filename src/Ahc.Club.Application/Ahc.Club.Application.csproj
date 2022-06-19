@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>1.0.0.0</VersionPrefix>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>Ahc.Club.Application</AssemblyName>
+    <PackageId>Ahc.Club.Application</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>Ahc.Club</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="19.2.0.46" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ahc.Club.Core\Ahc.Club.Core.csproj" />
+    <ProjectReference Include="..\Ahc.Club.Reflection\Ahc.Club.Reflection.csproj" />
+  </ItemGroup>
+</Project>

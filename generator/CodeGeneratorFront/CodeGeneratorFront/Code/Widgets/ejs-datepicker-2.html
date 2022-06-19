@@ -1,0 +1,20 @@
+<!--Fff-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="fff">
+            {{ "Fff" | localize }}
+        </label>
+        <div class="col-md-9">
+            <ejs-fffpicker id='fff'
+                            name='fff'
+                            cssClass="as-sy-input"
+                            required
+                            placeholder="{{ 'Fff' | localize }}"
+                            [(ngModel)]="xxx.fff"
+                            #fffModel="ngModel"
+                            #fffEl></ejs-fffpicker>
+            <abp-validation-summary [control]="fffModel" [controlEl]="fffEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>

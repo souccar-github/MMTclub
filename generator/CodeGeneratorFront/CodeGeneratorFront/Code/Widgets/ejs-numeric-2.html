@@ -1,0 +1,22 @@
+<!--Fff-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="fff">
+            {{ "Fff" | localize }}
+        </label>
+        <div class="col-md-9">
+            <ejs-numerictextbox id='fff'
+                                name='fff'
+                                format='N'
+                                min="1"
+                                cssClass="as-sy-input"
+                                [enableRtl]="true"
+                                required
+                                [(ngModel)]="xxx.fff"
+                                #fffModel="ngModel"
+                                #fffEl></ejs-numerictextbox>
+            <abp-validation-summary [control]="fffModel" [controlEl]="fffEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>

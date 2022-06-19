@@ -1,0 +1,68 @@
+<div [@routerTransition]>
+    <div class="row">
+        <div class="col-md-12">
+            <nb-card class="as-case-card">
+                <nb-card-header>
+                    <nb-actions>
+                        <nb-action class="control-item">
+                            <h5 class="as-m-l-1"><i class="fas fa-university"></i></h5>
+                            <h5>{{ "Student" | localize }}</h5>
+                        </nb-action>
+                        <nb-action class="control-item ">
+                        </nb-action>
+                    </nb-actions>
+                </nb-card-header>
+                <nb-card-body class="as-case-card-body">
+                    <ejs-grid id="StudentGrid" #studentGrid [dataSource]="students" [allowPaging]="true"
+                              [allowSorting]="true" [allowFiltering]="true" [enableRtl]='true'
+                              [pageSettings]="pageSettings" [filterSettings]='filterOption'>
+                        <!--toolbar-->
+                        <ng-template #toolbarTemplate>
+                            <ejs-toolbar>
+                                <div>
+                                    <!-- <div style="width: 5px;"></div> -->
+                                    <div>
+                                        <button ejs-button cssClass="as-btn-primary e-small e-round" iconCss="e-icons e-plus" (click)="showCreateDialog()" *ngIf="permission.isGranted('Action.Student.Create')"></button>
+                                    </div>
+                                    <div>
+                                        <button ejs-button cssClass="as-btn-primary-outline" iconCss="e-icons e-filter-clear-3"> <span class="as-btn-text">{{'ClearFilters' | localize}}</span></button>
+                                    </div>
+                                    <div>
+                                        <button ejs-button cssClass="as-btn-primary-outline" iconCss="e-icons e-sorting"> <span class="as-btn-text">{{'ClearSorts' | localize}}</span></button>
+                                    </div>
+                                </div>
+                            </ejs-toolbar>
+
+                        </ng-template>
+                        <!--Columns-->
+                        <e-columns>
+                            <e-column headerText="{{l('Commands')}}" textAlign='Center' width="140"
+                                      *ngIf="permission.isGranted('Action.Student.Update') || permission.isGranted('Action.Student.Delete')">
+                                <ng-template #template let-data>
+                                    <span class=""><button ejs-button cssClass="as-btn-success-outline e-small e-round" iconCss="e-icons e-edit" (click)="showEditDialog(data.id)" *ngIf="permission.isGranted('Action.Student.Update')"></button>  </span>
+                                    <span class="as-m-r-2"><button ejs-button cssClass="as-btn-danger-outline e-small e-round" iconCss="e-icons e-trash" (click)="delete(data)" *ngIf="permission.isGranted('Action.Student.Delete')"></button></span>
+                                </ng-template>
+                            </e-column>
+                            <e-column field="id" headerText="Id" isPrimaryKey="true" [visible]="false"></e-column>
+                            <e-column field="firstName" headerText="{{'firstName' | localize}}" textAlign="center"></e-column>
+                            <e-column field="lastName" headerText="{{'lastName' | localize}}" textAlign="center"></e-column>
+                            <e-column field="father" headerText="{{'father' | localize}}" textAlign="center"></e-column>
+                            <e-column field="mother" headerText="{{'mother' | localize}}" textAlign="center"></e-column>
+                            <e-column field="dateOfBirth" headerText="{{'dateOfBirth' | localize}}" textAlign="center"></e-column>
+                            <e-column field="nationalId" headerText="{{'nationalId' | localize}}" textAlign="center"></e-column>
+                            <e-column field="studentId" headerText="{{'studentId' | localize}}" textAlign="center"></e-column>
+                            <e-column field="year" headerText="{{'year' | localize}}" format="C2" textAlign="center"></e-column>
+                            <e-column field="mobile" headerText="{{'mobile' | localize}}" textAlign="center"></e-column>
+                            <e-column field="phone" headerText="{{'phone' | localize}}" textAlign="center"></e-column>
+                            <e-column field="universityId" headerText="{{'universityId' | localize}}" format="C2" textAlign="center"></e-column>
+                            <e-column field="collegeId" headerText="{{'collegeId' | localize}}" format="C2" textAlign="center"></e-column>
+                            <e-column field="majorId" headerText="{{'majorId' | localize}}" format="C2" textAlign="center"></e-column>
+
+                        </e-columns>
+                    </ejs-grid>
+                </nb-card-body>
+            </nb-card>
+        </div>
+    </div>
+    
+</div>

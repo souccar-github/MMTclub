@@ -1,0 +1,19 @@
+<!--Fff-->
+<div class="form-group row required">
+    <label class="col-md-3 col-form-label" for="fff">
+        {{ "Fff" | localize }}
+    </label>
+    <div class="col-md-9">
+        <textarea id='fff'
+                  name='fff'
+                  class="e-input as-sy-input"
+                  autocomplete="off"
+                  required
+                  [(ngModel)]="xxx.fff"
+                  #fffModel="ngModel"
+                  #fffEl></textarea>
+        <abp-validation-summary [control]="fffModel" [controlEl]="fffEl">
+        </abp-validation-summary>
+    </div>
+</div>
+

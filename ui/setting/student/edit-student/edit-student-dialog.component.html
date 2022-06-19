@@ -1,0 +1,308 @@
+<form class="form-horizontal" autocomplete="off" #editWriterForm="ngForm" (ngSubmit)="save()">
+    <nb-card>
+        <nb-card-header>
+            {{'EditWriter' | localize}}
+        </nb-card-header>
+        <nb-card-body>
+            <div>
+                    <!--FirstName-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="firstName">
+            {{ "FirstName" | localize }}
+        </label>
+        <div class="col-md-9">
+            <input type="text"
+                   id='firstName'
+                   name='firstName'
+                   minlength="2"
+                   fullWidth 
+                   required
+                   class="e-input as-sy-input"
+                   autocomplete="off"
+                   [(ngModel)]="student.firstName"
+                   #firstNameModel="ngModel"
+                   #firstNameEl />
+            <abp-validation-summary [control]="firstNameModel" [controlEl]="firstNameEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--LastName-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="lastName">
+            {{ "LastName" | localize }}
+        </label>
+        <div class="col-md-9">
+            <input type="text"
+                   id='lastName'
+                   name='lastName'
+                   minlength="2"
+                   fullWidth 
+                   required
+                   class="e-input as-sy-input"
+                   autocomplete="off"
+                   [(ngModel)]="student.lastName"
+                   #lastNameModel="ngModel"
+                   #lastNameEl />
+            <abp-validation-summary [control]="lastNameModel" [controlEl]="lastNameEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--Father-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="father">
+            {{ "Father" | localize }}
+        </label>
+        <div class="col-md-9">
+            <input type="text"
+                   id='father'
+                   name='father'
+                   minlength="2"
+                   fullWidth 
+                   required
+                   class="e-input as-sy-input"
+                   autocomplete="off"
+                   [(ngModel)]="student.father"
+                   #fatherModel="ngModel"
+                   #fatherEl />
+            <abp-validation-summary [control]="fatherModel" [controlEl]="fatherEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--Mother-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="mother">
+            {{ "Mother" | localize }}
+        </label>
+        <div class="col-md-9">
+            <input type="text"
+                   id='mother'
+                   name='mother'
+                   minlength="2"
+                   fullWidth 
+                   required
+                   class="e-input as-sy-input"
+                   autocomplete="off"
+                   [(ngModel)]="student.mother"
+                   #motherModel="ngModel"
+                   #motherEl />
+            <abp-validation-summary [control]="motherModel" [controlEl]="motherEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--DateOfBirth-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="dateOfBirth">
+            {{ "DateOfBirth" | localize }}
+        </label>
+        <div class="col-md-9">
+            <ejs-dateOfBirthpicker id='dateOfBirth'
+                            name='dateOfBirth'
+                            cssClass="as-sy-input"
+                            required
+                            placeholder="{{ 'DateOfBirth' | localize }}"
+                            [(ngModel)]="student.dateOfBirth"
+                            #dateOfBirthModel="ngModel"
+                            #dateOfBirthEl></ejs-dateOfBirthpicker>
+            <abp-validation-summary [control]="dateOfBirthModel" [controlEl]="dateOfBirthEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--NationalId-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="nationalId">
+            {{ "NationalId" | localize }}
+        </label>
+        <div class="col-md-9">
+            <input type="text"
+                   id='nationalId'
+                   name='nationalId'
+                   minlength="2"
+                   fullWidth 
+                   required
+                   class="e-input as-sy-input"
+                   autocomplete="off"
+                   [(ngModel)]="student.nationalId"
+                   #nationalIdModel="ngModel"
+                   #nationalIdEl />
+            <abp-validation-summary [control]="nationalIdModel" [controlEl]="nationalIdEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--StudentId-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="studentId">
+            {{ "StudentId" | localize }}
+        </label>
+        <div class="col-md-9">
+            <input type="text"
+                   id='studentId'
+                   name='studentId'
+                   minlength="2"
+                   fullWidth 
+                   required
+                   class="e-input as-sy-input"
+                   autocomplete="off"
+                   [(ngModel)]="student.studentId"
+                   #studentIdModel="ngModel"
+                   #studentIdEl />
+            <abp-validation-summary [control]="studentIdModel" [controlEl]="studentIdEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--Year-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="year">
+            {{ "Year" | localize }}
+        </label>
+        <div class="col-md-9">
+            <ejs-numerictextbox id='year'
+                                name='year'
+                                format='N'
+                                min="1"
+                                cssClass="as-sy-input"
+                                [enableRtl]="true"
+                                required
+                                [(ngModel)]="student.year"
+                                #yearModel="ngModel"
+                                #yearEl></ejs-numerictextbox>
+            <abp-validation-summary [control]="yearModel" [controlEl]="yearEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--Mobile-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="mobile">
+            {{ "Mobile" | localize }}
+        </label>
+        <div class="col-md-9">
+            <input type="text"
+                   id='mobile'
+                   name='mobile'
+                   minlength="2"
+                   fullWidth 
+                   required
+                   class="e-input as-sy-input"
+                   autocomplete="off"
+                   [(ngModel)]="student.mobile"
+                   #mobileModel="ngModel"
+                   #mobileEl />
+            <abp-validation-summary [control]="mobileModel" [controlEl]="mobileEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--Phone-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="phone">
+            {{ "Phone" | localize }}
+        </label>
+        <div class="col-md-9">
+            <input type="text"
+                   id='phone'
+                   name='phone'
+                   minlength="2"
+                   fullWidth 
+                   required
+                   class="e-input as-sy-input"
+                   autocomplete="off"
+                   [(ngModel)]="student.phone"
+                   #phoneModel="ngModel"
+                   #phoneEl />
+            <abp-validation-summary [control]="phoneModel" [controlEl]="phoneEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--University-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="university">
+            {{ "University" | localize }}
+        </label>
+        <div class="col-md-9">
+            <ejs-dropdownlist id='university'
+                              name='university'
+                              cssClass="as-sy-input"
+                              [dataSource]='universities'
+                              [enableRtl]="true"
+                              [fields]='universityFields'
+                              required
+                              [(ngModel)]="student.universityId"
+                              #universityModel="ngModel"
+                              #universityEl></ejs-dropdownlist>
+            <abp-validation-summary [control]="universityModel" [controlEl]="universityEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--College-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="college">
+            {{ "College" | localize }}
+        </label>
+        <div class="col-md-9">
+            <ejs-dropdownlist id='college'
+                              name='college'
+                              cssClass="as-sy-input"
+                              [dataSource]='colleges'
+                              [enableRtl]="true"
+                              [fields]='collegeFields'
+                              required
+                              [(ngModel)]="student.collegeId"
+                              #collegeModel="ngModel"
+                              #collegeEl></ejs-dropdownlist>
+            <abp-validation-summary [control]="collegeModel" [controlEl]="collegeEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+    <!--Major-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="major">
+            {{ "Major" | localize }}
+        </label>
+        <div class="col-md-9">
+            <ejs-dropdownlist id='major'
+                              name='major'
+                              cssClass="as-sy-input"
+                              [dataSource]='majors'
+                              [enableRtl]="true"
+                              [fields]='majorFields'
+                              required
+                              [(ngModel)]="student.majorId"
+                              #majorModel="ngModel"
+                              #majorEl></ejs-dropdownlist>
+            <abp-validation-summary [control]="majorModel" [controlEl]="majorEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </nb-card-body>
+        <nb-card-footer>
+            <abp-modal-footer [cancelDisabled]="saving" [saveDisabled]="!editWriterForm.form.valid || saving"
+            (onCancelClick)="dialogRef.close()"></abp-modal-footer>
+        </nb-card-footer>
+    </nb-card>
+</form>

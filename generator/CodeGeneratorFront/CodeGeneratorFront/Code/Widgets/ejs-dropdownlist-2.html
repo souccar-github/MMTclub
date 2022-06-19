@@ -1,0 +1,22 @@
+<!--Fff-->
+<div class="col-md-6">
+    <div class="form-group row required">
+        <label class="col-md-3 col-form-label" for="fff">
+            {{ "Fff" | localize }}
+        </label>
+        <div class="col-md-9">
+            <ejs-dropdownlist id='fff'
+                              name='fff'
+                              cssClass="as-sy-input"
+                              [dataSource]='fffs'
+                              [enableRtl]="true"
+                              [fields]='fffFields'
+                              required
+                              [(ngModel)]="xxx.fffId"
+                              #fffModel="ngModel"
+                              #fffEl></ejs-dropdownlist>
+            <abp-validation-summary [control]="fffModel" [controlEl]="fffEl">
+            </abp-validation-summary>
+        </div>
+    </div>
+</div>

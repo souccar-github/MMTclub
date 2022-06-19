@@ -1,0 +1,123 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <RootNamespace>Ahc.Club</RootNamespace>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20170424115119_Initial_Migrations.cs" />
+    <Compile Remove="Migrations\20170424115119_Initial_Migrations.Designer.cs" />
+    <Compile Remove="Migrations\20170608053244_Upgraded_To_Abp_2_1_0.cs" />
+    <Compile Remove="Migrations\20170608053244_Upgraded_To_Abp_2_1_0.Designer.cs" />
+    <Compile Remove="Migrations\20170621153937_Added_Description_And_IsActive_To_Role.cs" />
+    <Compile Remove="Migrations\20170621153937_Added_Description_And_IsActive_To_Role.Designer.cs" />
+    <Compile Remove="Migrations\20170703134115_Remove_IsActive_From_Role.cs" />
+    <Compile Remove="Migrations\20170703134115_Remove_IsActive_From_Role.Designer.cs" />
+    <Compile Remove="Migrations\20170804083601_Upgraded_To_Abp_v2.2.2.cs" />
+    <Compile Remove="Migrations\20170804083601_Upgraded_To_Abp_v2.2.2.Designer.cs" />
+    <Compile Remove="Migrations\20180201051646_Upgraded_To_Abp_v3.4.0.cs" />
+    <Compile Remove="Migrations\20180201051646_Upgraded_To_Abp_v3.4.0.Designer.cs" />
+    <Compile Remove="Migrations\20180320131229_Upgraded_To_Abp_v3_5_0.cs" />
+    <Compile Remove="Migrations\20180320131229_Upgraded_To_Abp_v3_5_0.Designer.cs" />
+    <Compile Remove="Migrations\20180509121141_Upgraded_To_Abp_v3_6_1.cs" />
+    <Compile Remove="Migrations\20180509121141_Upgraded_To_Abp_v3_6_1.Designer.cs" />
+    <Compile Remove="Migrations\20180726102624_Upgrade_ABP_380.cs" />
+    <Compile Remove="Migrations\20180726102703_Upgrade_ABP_3.8.0.cs" />
+    <Compile Remove="Migrations\20180726102703_Upgrade_ABP_3.8.0.Designer.cs" />
+    <Compile Remove="Migrations\20180731132139_Upgrade_ABP_3.8.1.cs" />
+    <Compile Remove="Migrations\20180731132139_Upgrade_ABP_3.8.1.Designer.cs" />
+    <Compile Remove="Migrations\20180927062408_test.cs" />
+    <Compile Remove="Migrations\20180927062608_Upgrade_ABP_3.8.3.cs" />
+    <Compile Remove="Migrations\20180927062608_Upgrade_ABP_3.8.3.Designer.cs" />
+    <Compile Remove="Migrations\20181013103914_Upgraded_To_Abp_v3_9_0.cs" />
+    <Compile Remove="Migrations\20181013103914_Upgraded_To_Abp_v3_9_0.Designer.cs" />
+    <Compile Remove="Migrations\20190111071724_Upgraded_To_Abp_v4_1_0.cs" />
+    <Compile Remove="Migrations\20190208051931_Upgrade_ABP_4_2_0.cs" />
+    <Compile Remove="Migrations\20190208051931_Upgrade_ABP_4_2_0.Designer.cs" />
+    <Compile Remove="Migrations\20190703062215_Upgraded_To_Abp_4_7_0.cs" />
+    <Compile Remove="Migrations\20190703062215_Upgraded_To_Abp_4_7_0.Designer.cs" />
+    <Compile Remove="Migrations\20190719143908_Upgraded_To_Abp_4_8_0.cs" />
+    <Compile Remove="Migrations\20190719143908_Upgraded_To_Abp_4_8_0.Designer.cs" />
+    <Compile Remove="Migrations\20191216011543_Upgraded_To_Abp_5_1_0.cs" />
+    <Compile Remove="Migrations\20191216011543_Upgraded_To_Abp_5_1_0.Designer.cs" />
+    <Compile Remove="Migrations\20200220110527_Upgraded_To_Abp_5_2_0.cs" />
+    <Compile Remove="Migrations\20200220110527_Upgraded_To_Abp_5_2_0.Designer.cs" />
+    <Compile Remove="Migrations\20200320114152_Upgraded_To_Abp_5_4_0.cs" />
+    <Compile Remove="Migrations\20200320114152_Upgraded_To_Abp_5_4_0.Designer.cs" />
+    <Compile Remove="Migrations\20200604091046_Upgraded_To_Abp_5_9.cs" />
+    <Compile Remove="Migrations\20200604091046_Upgraded_To_Abp_5_9.Designer.cs" />
+    <Compile Remove="Migrations\20200928141743_Upgraded_To_ABP_5_13_0.cs" />
+    <Compile Remove="Migrations\20200928141743_Upgraded_To_ABP_5_13_0.Designer.cs" />
+    <Compile Remove="Migrations\20210708151724_Create_Country_Entity.cs" />
+    <Compile Remove="Migrations\20210708151724_Create_Country_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210709144610_Add_Treasury_And_Currency_Entity.cs" />
+    <Compile Remove="Migrations\20210709144610_Add_Treasury_And_Currency_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210712162133_Add_Expense_Income_Entity.cs" />
+    <Compile Remove="Migrations\20210712162133_Add_Expense_Income_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210713154400_Create_Company_Client_Entity.cs" />
+    <Compile Remove="Migrations\20210713154400_Create_Company_Client_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210714164954_Add_DbContext_For_Detail.cs" />
+    <Compile Remove="Migrations\20210714164954_Add_DbContext_For_Detail.Designer.cs" />
+    <Compile Remove="Migrations\20210721124638_Create_Commision_Entity.cs" />
+    <Compile Remove="Migrations\20210721124638_Create_Commision_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210728210451_Create_CashFlows_Entities.cs" />
+    <Compile Remove="Migrations\20210728210451_Create_CashFlows_Entities.Designer.cs" />
+    <Compile Remove="Migrations\20210731104707_Edit_Outgoing_Transfer_Entity.cs" />
+    <Compile Remove="Migrations\20210731104707_Edit_Outgoing_Transfer_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210731135441_Create_Income_Transfer_Entity.cs" />
+    <Compile Remove="Migrations\20210731135441_Create_Income_Transfer_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210811203529_Create-Treasury-Action-Entity.cs" />
+    <Compile Remove="Migrations\20210811203529_Create-Treasury-Action-Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210814101528_Update_Treasury_Cash_Flow_Entity.cs" />
+    <Compile Remove="Migrations\20210814101528_Update_Treasury_Cash_Flow_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210814134647_Resolve_Transaction_Value_Object.cs" />
+    <Compile Remove="Migrations\20210814134647_Resolve_Transaction_Value_Object.Designer.cs" />
+    <Compile Remove="Migrations\20210814135501_Resolve_Transaction_Value_Object_Id.cs" />
+    <Compile Remove="Migrations\20210814135501_Resolve_Transaction_Value_Object_Id.Designer.cs" />
+    <Compile Remove="Migrations\20210814140150_Resolve_Transaction_Value_Object_Id.cs" />
+    <Compile Remove="Migrations\20210814140150_Resolve_Transaction_Value_Object_Id.Designer.cs" />
+    <Compile Remove="Migrations\20210814140749_Remove_Transaction_Identity.cs" />
+    <Compile Remove="Migrations\20210814140749_Remove_Transaction_Identity.Designer.cs" />
+    <Compile Remove="Migrations\20210814141102_Recreate_Transaction_Value_Object.cs" />
+    <Compile Remove="Migrations\20210814141102_Recreate_Transaction_Value_Object.Designer.cs" />
+    <Compile Remove="Migrations\20210814141452_Remove_Transaction_Identity2.cs" />
+    <Compile Remove="Migrations\20210814141452_Remove_Transaction_Identity2.Designer.cs" />
+    <Compile Remove="Migrations\20210814141654_Recreate_Transaction_Value_Object2.cs" />
+    <Compile Remove="Migrations\20210814141654_Recreate_Transaction_Value_Object2.Designer.cs" />
+    <Compile Remove="Migrations\20210814180925_Update_Entities.cs" />
+    <Compile Remove="Migrations\20210814180925_Update_Entities.Designer.cs" />
+    <Compile Remove="Migrations\20210814185609_Update_Cash_Flows_Entities.cs" />
+    <Compile Remove="Migrations\20210814185609_Update_Cash_Flows_Entities.Designer.cs" />
+    <Compile Remove="Migrations\20210818185628_Update_Treasury_Action_Entity.cs" />
+    <Compile Remove="Migrations\20210818185628_Update_Treasury_Action_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210818193141_Reupdate_Treasury_Action_Entity.cs" />
+    <Compile Remove="Migrations\20210818193141_Reupdate_Treasury_Action_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20210828210532_Update_Outgoing_Transfer_And_CashFlow_Entities.cs" />
+    <Compile Remove="Migrations\20210828210532_Update_Outgoing_Transfer_And_CashFlow_Entities.Designer.cs" />
+    <Compile Remove="Migrations\20220523220906_initial.cs" />
+    <Compile Remove="Migrations\20220523220906_initial.Designer.cs" />
+    <Compile Remove="Migrations\20220524115319_Update_Writer.cs" />
+    <Compile Remove="Migrations\20220524115319_Update_Writer.Designer.cs" />
+    <Compile Remove="Migrations\20220531141840_Remove_Collage_Entity.cs" />
+    <Compile Remove="Migrations\20220531141840_Remove_Collage_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20220606204716_Update_Course_Entity.cs" />
+    <Compile Remove="Migrations\20220606204716_Update_Course_Entity.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ahc.Club.Core\Ahc.Club.Core.csproj" />
+  </ItemGroup>
+</Project>
