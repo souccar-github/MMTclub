@@ -1,0 +1,14 @@
+using System;
+using Abp.Application.Services.Dto;
+
+namespace Ahc.Club.Ahc.Levels.Dto
+{
+   public class ReadLevelDto : EntityDto<int>
+    {
+        public string name { get; set; }
+        public string description { get; set; }
+        public int point { get; set; }
+        public string color { get; set; }
+    }
+}
+

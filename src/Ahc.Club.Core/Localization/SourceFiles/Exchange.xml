@@ -157,6 +157,7 @@
 		<text name="IsPrimary">Is Primary</text>
 		<text name="Size">Size</text>
 		<text name="Order">Order</text>
+		<text name="TheNameAlreadyExist">The name already exist!</text>
 		<text name="ParentCategory">Parent Category</text>
 		<text name="ChildCategories">Child Categories</text>
 	</texts>

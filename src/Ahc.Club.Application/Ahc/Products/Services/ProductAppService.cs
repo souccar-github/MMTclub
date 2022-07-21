@@ -26,25 +26,25 @@ namespace Ahc.Club.Ahc.Products.Services
             {
                 data = operations.PerformFiltering(data, dm.Where, "and");
             }
-            
+
             IEnumerable groupDs = new List<ProductDto>();
             if (dm.Group != null)
             {
                 groupDs = operations.PerformGrouping(data, dm.Group);
             }
-            
+
             var count = data.Count();
             if (dm.Skip != 0)
             {
                 data = operations.PerformSkip(data, dm.Skip);
             }
-            
+
             if (dm.Take != 0)
             {
                 data = operations.PerformTake(data, dm.Take);
             }
-            
-            return new ReadGrudDto() { result = data,count = 0, groupDs = groupDs };
+
+            return new ReadGrudDto() { result = data, count = 0, groupDs = groupDs };
         }
         public async Task<IList<ProductDto>> GetAllAsync()
         {
@@ -69,7 +69,8 @@ namespace Ahc.Club.Ahc.Products.Services
         }
         public async Task<UpdateProductDto> UpdateAsync(UpdateProductDto productDto)
         {
-            var product = ObjectMapper.Map<Product>(productDto);
+            var product = await _productDomainService.GetByIdAsync(productDto.Id);
+            ObjectMapper.Map<UpdateProductDto, Product>(productDto, product);
             var updatedProduct = await _productDomainService.UpdateAsync(product);
             return ObjectMapper.Map<UpdateProductDto>(updatedProduct);
         }

@@ -10,9 +10,14 @@ namespace Ahc.Club.Ahc.QrCodes
         public string ImagePath { get; set; }
         public string Code { get; set; }
 
-        #region ProductSize
-        public int? ProductSizeId { get; set; }
-        public virtual ProductSize ProductSize { get; set; }
+        #region Product
+        public int? ProductId { get; set; }
+        public virtual Product Product { get; set; }
+        #endregion
+
+        #region QrCode Request
+        public int? QrCodeRequestId { get; set; }
+        public virtual QrCodeRequest QrCodeRequest { get; set; }
         #endregion
 
         #region User

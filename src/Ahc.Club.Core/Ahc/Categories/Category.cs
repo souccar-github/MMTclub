@@ -11,8 +11,9 @@ namespace Ahc.Club.Ahc.Categories
         }
         public string Name { get; set; }
         public string Description { get; set; }
-        public string ImagePath { get; set; }
         public double Point { get; set; }
+        public string Image { get; set; }
+
 
         #region Parent Category
         public int? ParentCategoryId { get; set; }
@@ -20,6 +21,7 @@ namespace Ahc.Club.Ahc.Categories
         #endregion
 
         public virtual IList<Category> ChildCategories { get; set; }
+        public virtual IList<CategoryNews> News { get; set; }
 
     }
 }

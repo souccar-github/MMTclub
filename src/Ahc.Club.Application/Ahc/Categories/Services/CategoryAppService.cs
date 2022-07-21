@@ -69,7 +69,8 @@ namespace Ahc.Club.Ahc.Categories.Services
         }
         public async Task<UpdateCategoryDto> UpdateAsync(UpdateCategoryDto categoryDto)
         {
-            var category = ObjectMapper.Map<Category>(categoryDto);
+            var category = await _categoryDomainService.GetByIdAsync(categoryDto.Id);
+            ObjectMapper.Map<UpdateCategoryDto,Category>(categoryDto, category);
             var updatedCategory = await _categoryDomainService.UpdateAsync(category);
             return ObjectMapper.Map<UpdateCategoryDto>(updatedCategory);
         }

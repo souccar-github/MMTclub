@@ -30,5 +30,7 @@ namespace Ahc.Club.Authorization.Users
 
             return user;
         }
+
+        public double Point { get; set; }
     }
 }

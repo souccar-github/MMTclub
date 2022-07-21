@@ -13,6 +13,8 @@ using Abp.Linq.Extensions;
 using Abp.Localization;
 using Abp.Runtime.Session;
 using Abp.UI;
+using Ahc.Club.Ahc.Levels;
+using Ahc.Club.Ahc.Levels.Services;
 using Ahc.Club.Authorization;
 using Ahc.Club.Authorization.Accounts;
 using Ahc.Club.Authorization.Roles;
@@ -36,6 +38,7 @@ namespace Ahc.Club.Users
         private readonly IPasswordHasher<User> _passwordHasher;
         private readonly IAbpSession _abpSession;
         private readonly LogInManager _logInManager;
+        private readonly ILevelAppService _levelAppService;
 
         public UserAppService(
             IRepository<User, long> repository,
@@ -44,7 +47,8 @@ namespace Ahc.Club.Users
             IRepository<Role> roleRepository,
             IPasswordHasher<User> passwordHasher,
             IAbpSession abpSession,
-            LogInManager logInManager)
+            LogInManager logInManager,
+            ILevelAppService levelAppService)
             : base(repository)
         {
             _userManager = userManager;
@@ -53,6 +57,7 @@ namespace Ahc.Club.Users
             _passwordHasher = passwordHasher;
             _abpSession = abpSession;
             _logInManager = logInManager;
+            _levelAppService = levelAppService;
         }
 
         public override async Task<UserDto> CreateAsync(CreateUserDto input)
@@ -264,5 +269,19 @@ namespace Ahc.Club.Users
             return ObjectMapper.Map<List<UserForDropdownDto>>(users);
         }
 
+        public async Task<UserProfileDto> GetProfileAsync()
+        {
+            if (_abpSession.UserId == null)
+            {
+                throw new UserFriendlyException("Please log in before attemping to change password.");
+            }
+            long userId = _abpSession.UserId.Value;
+            var user = await _userManager.GetUserByIdAsync(userId);
+
+            var levelDto = _levelAppService.GetByPoint(user.Point);
+
+            return new UserProfileDto(user.FullName, user.UserName, user.Point, levelDto);
+            
+        }
     }
 }
