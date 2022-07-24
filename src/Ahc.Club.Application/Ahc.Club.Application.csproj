@@ -15,6 +15,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ahc.Club.Core\Ahc.Club.Core.csproj" />
+    <ProjectReference Include="..\Ahc.Club.Migrator\Ahc.Club.Migrator.csproj" />
     <ProjectReference Include="..\Ahc.Club.Reflection\Ahc.Club.Reflection.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ahc\Home\NewFolder\" />
   </ItemGroup>
 </Project>

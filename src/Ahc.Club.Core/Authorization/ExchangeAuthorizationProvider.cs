@@ -62,6 +62,12 @@ namespace Ahc.Club.Authorization
             context.CreatePermission(PermissionNames.Actions_Categories_Update, L("EditCategory"));
             context.CreatePermission(PermissionNames.Actions_Categories_Delete, L("DeleteCategory"));
 
+            //Category News
+            context.CreatePermission(PermissionNames.Pages_CategoryNews, L("CategoryNews"));
+            context.CreatePermission(PermissionNames.Actions_CategoryNews_Create, L("CreateNewCategory"));
+            context.CreatePermission(PermissionNames.Actions_CategoryNews_Update, L("EditCategory"));
+            context.CreatePermission(PermissionNames.Actions_CategoryNews_Delete, L("DeleteCategory"));
+
 
         }
 

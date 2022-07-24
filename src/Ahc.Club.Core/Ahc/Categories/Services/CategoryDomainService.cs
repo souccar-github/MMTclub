@@ -48,7 +48,8 @@ namespace Ahc.Club.Ahc.Categories.Services
                 }
 
                 id = await _categoryRepository.InsertAndGetIdAsync(category);
-                
+
+                unitOfWork.Complete();
             }
             return await _categoryRepository.GetAsync(id); ;
         }
@@ -87,6 +88,7 @@ namespace Ahc.Club.Ahc.Categories.Services
             return _localizationManager.GetString(ExchangeConsts.LocalizationSourceName, name);
         }
 
+        
     }
 }
 

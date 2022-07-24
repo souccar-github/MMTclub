@@ -22,6 +22,7 @@ namespace Ahc.Club.EntityFrameworkCore
         public DbSet<Gift> Gifts { get; set; }
         public DbSet<Size> Sizes { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<CategoryNews> CategoryNews { get; set; }
         public DbSet<GeneralSetting> GeneralSettings { get; set; }
         public ExchangeDbContext(DbContextOptions<ExchangeDbContext> options)
             : base(options)

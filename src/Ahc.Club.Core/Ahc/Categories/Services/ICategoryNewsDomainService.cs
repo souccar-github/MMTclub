@@ -10,6 +10,7 @@ namespace Ahc.Club.Ahc.Categories.Services
      {
         IQueryable<CategoryNews> Get();
         IQueryable<CategoryNews> GetByCategoryId(int categoryId);
+        IList<CategoryNews> GetByCategoryId(int categoryId, int count);
         Task<IList<CategoryNews>> GetAllAsync();
         Task<CategoryNews> GetByIdAsync(int id);
         Task<CategoryNews> CreateAsync(CategoryNews news);

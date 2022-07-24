@@ -1,7 +1,5 @@
 ﻿using Abp.Application.Services.Dto;
-using Ahc.Club.Ahc.Gifts.Dto;
 using Ahc.Club.Ahc.Levels.Dto;
-using System.Collections.Generic;
 
 namespace Ahc.Club.Users.Dto
 {

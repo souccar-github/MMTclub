@@ -55,7 +55,11 @@ namespace Ahc.Club.Ahc.Categories.Services
             return _localizationManager.GetString(ExchangeConsts.LocalizationSourceName, name);
         }
 
-        
+        public IList<CategoryNews> GetByCategoryId(int categoryId, int count)
+        {
+            return _newsRepository.GetAllList(x => x.CategoryId == categoryId)
+                .OrderByDescending(x => x.Id).Take(count).ToList();
+        }
     }
 }
 

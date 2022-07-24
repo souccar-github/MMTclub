@@ -55,5 +55,11 @@
         public const string Actions_Categories_Update = "Actions.Categories.Update";
         public const string Actions_Categories_Delete = "Actions.Categories.Delete";
 
+        //Category News
+        public const string Pages_CategoryNews = "Pages.CategoryNews";
+        public const string Actions_CategoryNews_Create = "Actions.CategoryNews.Create";
+        public const string Actions_CategoryNews_Update = "Actions.CategoryNews.Update";
+        public const string Actions_CategoryNews_Delete = "Actions.CategoryNews.Delete";
+
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using Abp.Application.Services.Dto;
+using Ahc.Club.Shared.Dto;
 using Microsoft.AspNetCore.Http;
 
 namespace Ahc.Club.Ahc.Categories.Dto
@@ -24,7 +25,7 @@ namespace Ahc.Club.Ahc.Categories.Dto
         public string Description { get; set; }
         public double Point { get; set; }
         public int? ParentCategoryId { get; set; }
-        public string Image { get; set; }
+        public FileUploadDto Image { get; set; }
     }
 }
 

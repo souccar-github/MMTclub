@@ -8,12 +8,13 @@ namespace Ahc.Club.Ahc.Categories.Map
         public CategoryMapProfile()
         {
             CreateMap<Category, CategoryDto>();
+            CreateMap<Category, ParentCategoryDto>();
             CreateMap<Category, CategoryForDropdownDto>();
             CreateMap<Category, ReadCategoryDto>();
             CreateMap<CreateCategoryDto, Category>();
-            CreateMap<Category, CreateCategoryDto>();
-            CreateMap<UpdateCategoryDto, Category>();
-            CreateMap<Category, UpdateCategoryDto>();
+            CreateMap<Category, CreateCategoryDto>().ForMember(m => m.Image, a => a.Ignore());
+            CreateMap<UpdateCategoryDto, Category>().ForMember(m => m.Image, a => a.Ignore());
+            CreateMap<Category, UpdateCategoryDto>().ForMember(m => m.Image, a => a.Ignore());
         }
     }
 }

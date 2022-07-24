@@ -13,6 +13,7 @@ namespace Ahc.Club.Ahc.Products.Services
     {
         ReadGrudDto Get([FromBody] DataManagerRequest dm);
         Task<IList<ProductDto>> GetAllAsync();
+        IList<ProductDto> GetProducts(int? categoryId, string keyword);
         Task<ProductDto> GetByIdAsync(int id);
         Task<UpdateProductDto> GetForEditAsync(int id);
         Task<CreateProductDto> CreateAsync(CreateProductDto product);

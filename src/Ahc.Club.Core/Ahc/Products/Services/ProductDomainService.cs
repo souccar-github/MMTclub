@@ -38,6 +38,8 @@ namespace Ahc.Club.Ahc.Products.Services
             var product = await _productRepository.FirstOrDefaultAsync(id);
             await _productRepository.DeleteAsync(product);
         }
+
+        
     }
 }
 

@@ -78,6 +78,16 @@ namespace Ahc.Club.Ahc.Products.Services
         {
             await _productDomainService.DeleteAsync(id);
         }
+
+        public IList<ProductDto> GetProducts(int? categoryId, string keyword)
+        {
+            var  products = _productDomainService.Get().Where(x =>
+            (categoryId != null && x.CategoryId == categoryId) &&
+            (!string.IsNullOrEmpty(keyword) && x.Name.Contains(keyword))
+            ).ToList();
+
+            return ObjectMapper.Map<List<ProductDto>>(products);
+        }
     }
 }
 

@@ -18,5 +18,6 @@ namespace Ahc.Club.Users
         Task<bool> ChangePassword(ChangePasswordDto input);
         Task<IList<UserForDropdownDto>> GetUsersForDropdown();
         Task<UserProfileDto> GetProfileAsync();
+        
     }
 }

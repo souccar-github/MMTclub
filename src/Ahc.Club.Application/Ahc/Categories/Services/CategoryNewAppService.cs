@@ -1,20 +1,33 @@
 ﻿using Ahc.Club.Ahc.Categories.Dto;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Syncfusion.EJ2.Base;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Ahc.Club.Reflection.Extensions;
 using System.Threading.Tasks;
+using Ahc.Club.Shared.Dto;
 
 namespace Ahc.Club.Ahc.Categories.Services
 {
     public class CategoryNewsAppService : ExchangeAppServiceBase, ICategoryNewsAppService
     {
         private readonly ICategoryNewsDomainService _newsDomainService;
-        public CategoryNewsAppService(ICategoryNewsDomainService newsDomainService)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        
+        public CategoryNewsAppService(
+            ICategoryNewsDomainService newsDomainService, 
+            IWebHostEnvironment webHostEnvironment, 
+            IHttpContextAccessor httpContextAccessor)
         {
             _newsDomainService = newsDomainService;
+            _webHostEnvironment = webHostEnvironment;
+            _httpContextAccessor = httpContextAccessor;
         }
+
         [HttpPost]
         public ReadGrudDto Get([FromBody] DataManagerRequest dm)
         {
@@ -58,19 +71,47 @@ namespace Ahc.Club.Ahc.Categories.Services
         public async Task<UpdateCategoryNewsDto> GetForEditAsync(int id)
         {
             var news = await _newsDomainService.GetByIdAsync(id);
-            return ObjectMapper.Map<UpdateCategoryNewsDto>(news);
+            var output = ObjectMapper.Map<UpdateCategoryNewsDto>(news);
+
+            if (!string.IsNullOrEmpty(news.Image))
+            {
+                var fileName = news.Image.GetFileName();
+                var path = _webHostEnvironment.WebRootPath + "\\news\\" + fileName;
+                var file = new FileUploadDto();
+                file.FileAsBase64 = path.GetBase64Data();
+                file.FileName = fileName;
+                file.FileType = file.FileName.GetFileType();
+                file.FilePath = $"news/{fileName}";
+                output.Image = file;
+            }
+
+            return output;
         }
-        public async Task<CreateCategoryNewsDto> CreateAsync(CreateCategoryNewsDto newsDto)
+        public async Task<CreateCategoryNewsDto> CreateAsync(CreateCategoryNewsDto categoryNewsDto)
         {
-            var news = ObjectMapper.Map<CategoryNews>(newsDto);
-            var createdCategoryNews = await _newsDomainService.CreateAsync(news);
+            var categoryNews = ObjectMapper.Map<CategoryNews>(categoryNewsDto);
+
+            if (categoryNewsDto.Image != null)
+            {
+                var rootPath = _webHostEnvironment.WebRootPath;
+                categoryNews.Image = categoryNewsDto.Image.SaveFileAndGetUrl(rootPath, "news");
+            }
+
+            var createdCategoryNews = await _newsDomainService.CreateAsync(categoryNews);
             return ObjectMapper.Map<CreateCategoryNewsDto>(createdCategoryNews);
         }
         public async Task<UpdateCategoryNewsDto> UpdateAsync(UpdateCategoryNewsDto newsDto)
         {
-            var news = await _newsDomainService.GetByIdAsync(newsDto.Id);
-            ObjectMapper.Map<UpdateCategoryNewsDto, CategoryNews>(newsDto, news);
-            var updatedCategoryNews = await _newsDomainService.UpdateAsync(news);
+            var categoryNews = await _newsDomainService.GetByIdAsync(newsDto.Id);
+            ObjectMapper.Map<UpdateCategoryNewsDto, CategoryNews>(newsDto, categoryNews);
+
+            if (newsDto.Image != null && categoryNews.Image.GetFileName() != newsDto.Image.FileName)
+            {
+                var rootPath = _webHostEnvironment.WebRootPath;
+                categoryNews.Image = newsDto.Image.SaveFileAndGetUrl(rootPath, "categories");
+            }
+
+            var updatedCategoryNews = await _newsDomainService.UpdateAsync(categoryNews);
             return ObjectMapper.Map<UpdateCategoryNewsDto>(updatedCategoryNews);
         }
         public async Task DeleteAsync(int id)

@@ -19,6 +19,7 @@ namespace Ahc.Club.Ahc.Categories.Services
         Task<CreateCategoryDto> CreateAsync(CreateCategoryDto category);
         Task<UpdateCategoryDto> UpdateAsync(UpdateCategoryDto category);
         Task DeleteAsync(int id);
+        IList<ParentCategoryDto> GetParent();
     }
 }
 
