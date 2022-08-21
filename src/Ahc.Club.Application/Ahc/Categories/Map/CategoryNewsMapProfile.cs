@@ -10,9 +10,9 @@ namespace Ahc.Club.Ahc.Categories.Map
             CreateMap<CategoryNews, CategoryNewsDto>();
             CreateMap<CategoryNews, ReadCategoryNewsDto>();
             CreateMap<CreateCategoryNewsDto, CategoryNews>();
-            CreateMap<CategoryNews, CreateCategoryNewsDto>();
-            CreateMap<UpdateCategoryNewsDto, CategoryNews>();
-            CreateMap<CategoryNews, UpdateCategoryNewsDto>();
+            CreateMap<CategoryNews, CreateCategoryNewsDto>().ForMember(m => m.Image, a => a.Ignore());
+            CreateMap<UpdateCategoryNewsDto, CategoryNews>().ForMember(m => m.Image, a => a.Ignore());
+            CreateMap<CategoryNews, UpdateCategoryNewsDto>().ForMember(m => m.Image, a => a.Ignore());
         }
     }
 }

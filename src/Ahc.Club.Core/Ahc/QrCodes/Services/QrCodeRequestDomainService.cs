@@ -15,7 +15,7 @@ namespace Ahc.Club.Ahc.QrCodes.Services
         }
         public IQueryable<QrCodeRequest> Get()
         {
-            return _qrCodeRequestRepository.GetAll();
+            return _qrCodeRequestRepository.GetAllIncluding(p => p.Product);
         }
         public async Task<IList<QrCodeRequest>> GetAllAsync()
         {
@@ -27,7 +27,8 @@ namespace Ahc.Club.Ahc.QrCodes.Services
         }
         public async Task<QrCodeRequest> CreateAsync(QrCodeRequest qrCodeRequest)
         {
-            return await _qrCodeRequestRepository.InsertAsync(qrCodeRequest);
+            var id = await _qrCodeRequestRepository.InsertAndGetIdAsync(qrCodeRequest);
+            return await _qrCodeRequestRepository.GetAsync(id);
         }
         public async Task<QrCodeRequest> UpdateAsync(QrCodeRequest qrCodeRequest)
         {

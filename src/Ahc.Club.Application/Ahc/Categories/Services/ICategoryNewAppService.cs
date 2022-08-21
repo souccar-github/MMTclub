@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Services;
 using Ahc.Club.Ahc.Categories.Dto;
+using Ahc.Club.Shared;
 using Microsoft.AspNetCore.Mvc;
 using Syncfusion.EJ2.Base;
 using System;
@@ -11,7 +12,7 @@ namespace Ahc.Club.Ahc.Categories.Services
 {
     public interface ICategoryNewsAppService : IApplicationService
     {
-        ReadGrudDto Get([FromBody] DataManagerRequest dm);
+        ReadGrudDto Get([FromBody] AhcDataManagerRequest dm);
         IList<CategoryNewsDto> GetByCategoryId(int categoryId);
         Task<IList<CategoryNewsDto>> GetAllAsync();
         Task<CategoryNewsDto> GetByIdAsync(int id);

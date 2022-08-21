@@ -9,6 +9,7 @@ using System.Linq;
 using Ahc.Club.Reflection.Extensions;
 using System.Threading.Tasks;
 using Ahc.Club.Shared.Dto;
+using Ahc.Club.Shared;
 
 namespace Ahc.Club.Ahc.Categories.Services
 {
@@ -29,9 +30,9 @@ namespace Ahc.Club.Ahc.Categories.Services
         }
 
         [HttpPost]
-        public ReadGrudDto Get([FromBody] DataManagerRequest dm)
+        public ReadGrudDto Get([FromBody] AhcDataManagerRequest dm)
         {
-            var list = _newsDomainService.Get().ToList();
+            var list = _newsDomainService.GetByCategoryId(dm.id).ToList();
             IEnumerable<ReadCategoryNewsDto> data = ObjectMapper.Map<List<ReadCategoryNewsDto>>(list);
             var operations = new DataOperations();
             if (dm.Where != null)
@@ -75,14 +76,19 @@ namespace Ahc.Club.Ahc.Categories.Services
 
             if (!string.IsNullOrEmpty(news.Image))
             {
-                var fileName = news.Image.GetFileName();
-                var path = _webHostEnvironment.WebRootPath + "\\news\\" + fileName;
                 var file = new FileUploadDto();
-                file.FileAsBase64 = path.GetBase64Data();
-                file.FileName = fileName;
-                file.FileType = file.FileName.GetFileType();
-                file.FilePath = $"news/{fileName}";
-                output.Image = file;
+                try
+                {
+                    var fileName = news.Image.GetFileName();
+                    var path = _webHostEnvironment.WebRootPath + "\\news\\" + fileName;
+
+                    file.FileAsBase64 = path.GetBase64Data();
+                    file.FileName = fileName;
+                    file.FileType = file.FileName.GetFileType();
+                    file.FilePath = $"news/{fileName}";
+                    output.Image = file;
+                }
+                catch { }
             }
 
             return output;
@@ -108,7 +114,7 @@ namespace Ahc.Club.Ahc.Categories.Services
             if (newsDto.Image != null && categoryNews.Image.GetFileName() != newsDto.Image.FileName)
             {
                 var rootPath = _webHostEnvironment.WebRootPath;
-                categoryNews.Image = newsDto.Image.SaveFileAndGetUrl(rootPath, "categories");
+                categoryNews.Image = newsDto.Image.SaveFileAndGetUrl(rootPath, "news");
             }
 
             var updatedCategoryNews = await _newsDomainService.UpdateAsync(categoryNews);

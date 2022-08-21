@@ -77,6 +77,15 @@ namespace Ahc.Club.Ahc.QrCodes.Services
         {
             await _qrCodeDomainService.DeleteAsync(id);
         }
+
+        public async Task<QrCodeDto> ReadCode(string code)
+        {
+            var currentUser = await GetCurrentUserAsync();
+            var updatedQrCode = await _qrCodeDomainService.ReadCode(code, currentUser.Id);
+            return ObjectMapper.Map<QrCodeDto>(updatedQrCode);
+        }
+
+        
     }
 }
 

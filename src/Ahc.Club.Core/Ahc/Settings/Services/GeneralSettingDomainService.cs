@@ -31,7 +31,7 @@ namespace Ahc.Club.Ahc.Settings.Services
         }
         public async Task<GeneralSetting> UpdateAsync(GeneralSetting generalSetting)
         {
-            return await _generalSettingRepository.InsertOrUpdateAsync(generalSetting);
+            return await _generalSettingRepository.UpdateAsync(generalSetting);
         }
         public async Task DeleteAsync(int id)
         {

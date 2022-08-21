@@ -1,5 +1,6 @@
 using System;
 using Abp.Application.Services.Dto;
+using Ahc.Club.Ahc.Products.Dto;
 
 namespace Ahc.Club.Ahc.QrCodes.Dto
 {
@@ -8,6 +9,7 @@ namespace Ahc.Club.Ahc.QrCodes.Dto
         public DateTime? date { get; set; }
         public int count { get; set; }
         public int? productId { get; set; }
+        public ReadProductDto product { get; set; }
     }
 }
 

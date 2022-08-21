@@ -24,19 +24,29 @@ namespace Ahc.Club.Authorization
             context.CreatePermission(PermissionNames.Pages_Roles_Edit, L("EditRole"));
             context.CreatePermission(PermissionNames.Pages_Roles_Delete, L("DeleteRole"));
 
-
-
             //QrCodes
             context.CreatePermission(PermissionNames.Pages_QrCodes, L("QrCode"));
             context.CreatePermission(PermissionNames.Actions_QrCodes_Create, L("CreateNewQrCode"));
             context.CreatePermission(PermissionNames.Actions_QrCodes_Update, L("EditQrCode"));
             context.CreatePermission(PermissionNames.Actions_QrCodes_Delete, L("DeleteQrCode"));
 
+            //QrCodeRequests
+            context.CreatePermission(PermissionNames.Pages_QrCodeRequests, L("QrCodeRequests"));
+            context.CreatePermission(PermissionNames.Actions_QrCodeRequests_Create, L("CreateNewRequest"));
+            context.CreatePermission(PermissionNames.Actions_QrCodeRequests_Update, L("EditRequest"));
+            context.CreatePermission(PermissionNames.Actions_QrCodeRequests_Delete, L("DeleteRequest"));
+
             //Products
             context.CreatePermission(PermissionNames.Pages_Products, L("Product"));
             context.CreatePermission(PermissionNames.Actions_Products_Create, L("CreateNewProduct"));
             context.CreatePermission(PermissionNames.Actions_Products_Update, L("EditProduct"));
             context.CreatePermission(PermissionNames.Actions_Products_Delete, L("DeleteProduct"));
+
+            //Complaints
+            context.CreatePermission(PermissionNames.Pages_Complaints, L("Complaint"));
+            context.CreatePermission(PermissionNames.Actions_Complaints_Create, L("CreateNewComplaint"));
+            context.CreatePermission(PermissionNames.Actions_Complaints_Update, L("EditComplaint"));
+            context.CreatePermission(PermissionNames.Actions_Complaints_Delete, L("DeleteComplaint"));
 
             //ProductImages
             context.CreatePermission(PermissionNames.Pages_ProductImages, L("ProductImage"));
@@ -50,11 +60,17 @@ namespace Ahc.Club.Authorization
             context.CreatePermission(PermissionNames.Actions_ProductSizes_Update, L("EditProductSize"));
             context.CreatePermission(PermissionNames.Actions_ProductSizes_Delete, L("DeleteProductSize"));
 
-            //Sizes
-            context.CreatePermission(PermissionNames.Pages_Sizes, L("Size"));
-            context.CreatePermission(PermissionNames.Actions_Sizes_Create, L("CreateNewSize"));
-            context.CreatePermission(PermissionNames.Actions_Sizes_Update, L("EditSize"));
-            context.CreatePermission(PermissionNames.Actions_Sizes_Delete, L("DeleteSize"));
+            //Levels
+            context.CreatePermission(PermissionNames.Pages_Levels, L("Level"));
+            context.CreatePermission(PermissionNames.Actions_Levels_Create, L("CreateNewLevel"));
+            context.CreatePermission(PermissionNames.Actions_Levels_Update, L("EditLevel"));
+            context.CreatePermission(PermissionNames.Actions_Levels_Delete, L("DeleteLevel"));
+
+            // Gifts
+            context.CreatePermission(PermissionNames.Pages_Gifts, L("Gift"));
+            context.CreatePermission(PermissionNames.Actions_Gifts_Create, L("CreateNewGift"));
+            context.CreatePermission(PermissionNames.Actions_Gifts_Update, L("EditGift"));
+            context.CreatePermission(PermissionNames.Actions_Gifts_Delete, L("DeleteGift"));
 
             //Categories
             context.CreatePermission(PermissionNames.Pages_Categories, L("Category"));

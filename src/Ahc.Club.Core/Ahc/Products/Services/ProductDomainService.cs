@@ -31,7 +31,7 @@ namespace Ahc.Club.Ahc.Products.Services
         }
         public async Task<Product> UpdateAsync(Product product)
         {
-            return await _productRepository.InsertOrUpdateAsync(product);
+            return await _productRepository.UpdateAsync(product);
         }
         public async Task DeleteAsync(int id)
         {

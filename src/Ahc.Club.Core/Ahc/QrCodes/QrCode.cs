@@ -25,5 +25,6 @@ namespace Ahc.Club.Ahc.QrCodes
         public virtual User User { get; set; }
         #endregion
 
+        
     }
 }

@@ -1414,6 +1414,56 @@ namespace Ahc.Club.Migrations
                     b.ToTable("CategoryNews");
                 });
 
+            modelBuilder.Entity("Ahc.Club.Ahc.Complaints.Complaint", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("ComplaintDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("CreatorUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("DeleterUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime?>("DeletionTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastModificationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("LastModifierUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<int?>("TenantId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("UserId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Complaints");
+                });
+
             modelBuilder.Entity("Ahc.Club.Ahc.Gifts.Gift", b =>
                 {
                     b.Property<int>("Id")
@@ -1717,7 +1767,7 @@ namespace Ahc.Club.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("QrCodeRequest");
+                    b.ToTable("QrCodeRequests");
                 });
 
             modelBuilder.Entity("Ahc.Club.Ahc.Settings.GeneralSetting", b =>
@@ -1739,7 +1789,7 @@ namespace Ahc.Club.Migrations
                     b.Property<DateTime?>("DeletionTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Facbook")
+                    b.Property<string>("Facebook")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("InitialPoint")
@@ -2222,6 +2272,13 @@ namespace Ahc.Club.Migrations
                     b.HasOne("Ahc.Club.Ahc.Categories.Category", "Category")
                         .WithMany("News")
                         .HasForeignKey("CategoryId");
+                });
+
+            modelBuilder.Entity("Ahc.Club.Ahc.Complaints.Complaint", b =>
+                {
+                    b.HasOne("Ahc.Club.Authorization.Users.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Ahc.Club.Ahc.Gifts.Gift", b =>

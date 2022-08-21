@@ -98,6 +98,11 @@ namespace Ahc.Club.Authorization.Users
             return AsyncHelper.RunSync(() => GetUserAsync(userIdentifier));
         }
 
+        public async Task<User> GetUserByNameAsync(string username)
+        {
+            return await FindByNameAsync(username);
+        }
+
         public override Task<IdentityResult> SetRolesAsync(User user, string[] roleNames)
         {
             if (user.Name == "admin" && !roleNames.Contains(StaticRoleNames.Host.Admin))
@@ -183,6 +188,13 @@ namespace Ahc.Club.Authorization.Users
             {
                 throw new UserFriendlyException(L("YouCannotRemoveUserRolePermissionsFromAdminUser"));
             }
+        }
+
+        public async Task IncreasePointsAsync(double point, long userId)
+        {
+            var user = GetUserById(userId);
+            user.Point = user.Point + point;
+            await UpdateAsync(user);
         }
 
         private new string L(string name)

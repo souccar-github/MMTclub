@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\categories\" />
+    <Folder Include="wwwroot\gift\" />
+    <Folder Include="wwwroot\products\" />
     <Folder Include="wwwroot\news\" />
     <Folder Include="wwwroot\temp\" />
   </ItemGroup>

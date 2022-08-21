@@ -10,9 +10,9 @@ namespace Ahc.Club.Ahc.Gifts.Map
             CreateMap<Gift, GiftDto>();
             CreateMap<Gift, ReadGiftDto>();
             CreateMap<CreateGiftDto, Gift>();
-            CreateMap<Gift, CreateGiftDto>();
-            CreateMap<UpdateGiftDto, Gift>();
-            CreateMap<Gift, UpdateGiftDto>();
+            CreateMap<Gift, CreateGiftDto>().ForMember(m => m.Image, a => a.Ignore());
+            CreateMap<UpdateGiftDto, Gift>().ForMember(m => m.Image, a => a.Ignore());
+            CreateMap<Gift, UpdateGiftDto>().ForMember(m => m.Image, a => a.Ignore());
         }
     }
 }

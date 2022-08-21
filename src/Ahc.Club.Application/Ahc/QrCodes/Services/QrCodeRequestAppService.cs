@@ -6,16 +6,34 @@ using Ahc.Club.Ahc.QrCodes.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Syncfusion.EJ2.Base;
 using System.Collections;
+using Microsoft.AspNetCore.Hosting;
+using QRCoder;
+using System.Drawing;
+using System.Drawing.Imaging;
+using Abp.Domain.Uow;
+using System.Threading;
 
 namespace Ahc.Club.Ahc.QrCodes.Services
 {
     public class QrCodeRequestAppService : ExchangeAppServiceBase, IQrCodeRequestAppService
     {
         private readonly IQrCodeRequestDomainService _qrCodeRequestDomainService;
-        public QrCodeRequestAppService(IQrCodeRequestDomainService qrCodeRequestDomainService)
+        private readonly IQrCodeDomainService _qrCodeDomainService;
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IUnitOfWorkManager _unitOfWorkManager;
+        
+        public QrCodeRequestAppService(
+            IQrCodeRequestDomainService qrCodeRequestDomainService, 
+            IQrCodeDomainService qrCodeDomainService, 
+            IWebHostEnvironment webHostEnvironment, 
+            IUnitOfWorkManager unitOfWorkManager)
         {
             _qrCodeRequestDomainService = qrCodeRequestDomainService;
+            _qrCodeDomainService = qrCodeDomainService;
+            _webHostEnvironment = webHostEnvironment;
+            _unitOfWorkManager = unitOfWorkManager;
         }
+
         [HttpPost]
         public ReadGrudDto Get([FromBody] DataManagerRequest dm)
         {
@@ -63,8 +81,31 @@ namespace Ahc.Club.Ahc.QrCodes.Services
         }
         public async Task<CreateQrCodeRequestDto> CreateAsync(CreateQrCodeRequestDto qrCodeRequestDto)
         {
-            var qrCodeRequest = ObjectMapper.Map<QrCodeRequest>(qrCodeRequestDto);
-            var createdQrCodeRequest = await _qrCodeRequestDomainService.CreateAsync(qrCodeRequest);
+            QrCodeRequest createdQrCodeRequest;
+            using (var unitOfWork = _unitOfWorkManager.Begin())
+            {
+                qrCodeRequestDto.Date = DateTime.Now;
+                var qrCodeRequest = ObjectMapper.Map<QrCodeRequest>(qrCodeRequestDto);
+                createdQrCodeRequest = await _qrCodeRequestDomainService.CreateAsync(qrCodeRequest);
+
+                // Generate QrCode
+                for (int i = 0; i < qrCodeRequestDto.Count; i++)
+                {
+                    var code = CreateQrCode();
+                    var qrCode = new QrCode()
+                    {
+                        ProductId =qrCodeRequest.ProductId,
+                        QrCodeRequestId = qrCodeRequest.Id,
+                        ImagePath = $"qr-code/{code}.png",
+                        Code = code
+                    };
+                    await _qrCodeDomainService.CreateAsync(qrCode);
+                    Thread.Sleep(50);
+                }
+
+                unitOfWork.Complete();
+            }
+            
             return ObjectMapper.Map<CreateQrCodeRequestDto>(createdQrCodeRequest);
         }
         public async Task<UpdateQrCodeRequestDto> UpdateAsync(UpdateQrCodeRequestDto qrCodeRequestDto)
@@ -76,6 +117,20 @@ namespace Ahc.Club.Ahc.QrCodes.Services
         public async Task DeleteAsync(int id)
         {
             await _qrCodeRequestDomainService.DeleteAsync(id);
+        }
+
+        private string CreateQrCode()
+        {
+            var code = Guid.NewGuid().ToString();
+            var rootPath = _webHostEnvironment.WebRootPath;
+            using (QRCodeGenerator qrGenerator = new QRCodeGenerator())
+            using (QRCodeData qrCodeData = qrGenerator.CreateQrCode(code, QRCodeGenerator.ECCLevel.Q))
+            using (QRCode qrCode = new QRCode(qrCodeData))
+            {
+                Bitmap qrCodeImage = qrCode.GetGraphic(20);
+                qrCodeImage.Save($"{rootPath}\\qr-code\\{code}.png", ImageFormat.Png);
+            }
+            return code;
         }
     }
 }

@@ -18,6 +18,7 @@ namespace Ahc.Club.Ahc.QrCodes.Services
         Task<CreateQrCodeDto> CreateAsync(CreateQrCodeDto qrCode);
         Task<UpdateQrCodeDto> UpdateAsync(UpdateQrCodeDto qrCode);
         Task DeleteAsync(int id);
+        Task<QrCodeDto> ReadCode(string code);
     }
 }
 

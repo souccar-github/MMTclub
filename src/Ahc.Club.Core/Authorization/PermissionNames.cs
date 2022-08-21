@@ -25,6 +25,18 @@
         public const string Actions_QrCodes_Update = "Actions.QrCodes.Update";
         public const string Actions_QrCodes_Delete = "Actions.QrCodes.Delete";
 
+        //QrCodeRequests
+        public const string Pages_QrCodeRequests = "Pages.QrCodeRequests";
+        public const string Actions_QrCodeRequests_Create = "Actions.QrCodeRequests.Create";
+        public const string Actions_QrCodeRequests_Update = "Actions.QrCodeRequests.Update";
+        public const string Actions_QrCodeRequests_Delete = "Actions.QrCodeRequests.Delete";
+
+        //Complaints
+        public const string Pages_Complaints = "Pages.Complaints";
+        public const string Actions_Complaints_Create = "Actions.Complaints.Create";
+        public const string Actions_Complaints_Update = "Actions.Complaints.Update";
+        public const string Actions_Complaints_Delete = "Actions.Complaints.Delete";
+
         //Products
         public const string Pages_Products = "Pages.Products";
         public const string Actions_Products_Create = "Actions.Products.Create";
@@ -43,11 +55,17 @@
         public const string Actions_ProductSizes_Update = "Actions.ProductSizes.Update";
         public const string Actions_ProductSizes_Delete = "Actions.ProductSizes.Delete";
 
-        //Sizes
-        public const string Pages_Sizes = "Pages.Sizes";
-        public const string Actions_Sizes_Create = "Actions.Sizes.Create";
-        public const string Actions_Sizes_Update = "Actions.Sizes.Update";
-        public const string Actions_Sizes_Delete = "Actions.Sizes.Delete";
+        //Levels
+        public const string Pages_Levels = "Pages.Levels";
+        public const string Actions_Levels_Create = "Actions.Levels.Create";
+        public const string Actions_Levels_Update = "Actions.Levels.Update";
+        public const string Actions_Levels_Delete = "Actions.Levels.Delete";
+
+        //Gifts
+        public const string Pages_Gifts = "Pages.Gifts";
+        public const string Actions_Gifts_Create = "Actions.Gifts.Create";
+        public const string Actions_Gifts_Update = "Actions.Gifts.Update";
+        public const string Actions_Gifts_Delete = "Actions.Gifts.Delete";
 
         //Categories
         public const string Pages_Categories = "Pages.Categories";

@@ -10,9 +10,20 @@ namespace Ahc.Club.Ahc.Products.Map
             CreateMap<Product, ProductDto>();
             CreateMap<Product, ReadProductDto>();
             CreateMap<CreateProductDto, Product>();
-            CreateMap<Product, CreateProductDto>();
-            CreateMap<UpdateProductDto, Product>();
-            CreateMap<Product, UpdateProductDto>();
+            CreateMap<Product, CreateProductDto>()
+                .ForMember(m => m.FirstImage, a => a.Ignore())
+                .ForMember(m => m.SecondImage, a => a.Ignore())
+                .ForMember(m => m.ThirdImage, a => a.Ignore());
+
+            CreateMap<UpdateProductDto, Product>()
+                .ForMember(m => m.FirstImage, a => a.Ignore())
+                .ForMember(m => m.SecondImage, a => a.Ignore())
+                .ForMember(m => m.ThirdImage, a => a.Ignore());
+
+            CreateMap<Product, UpdateProductDto>()
+                .ForMember(m => m.FirstImage, a => a.Ignore())
+                .ForMember(m => m.SecondImage, a => a.Ignore())
+                .ForMember(m => m.ThirdImage, a => a.Ignore());
         }
     }
 }

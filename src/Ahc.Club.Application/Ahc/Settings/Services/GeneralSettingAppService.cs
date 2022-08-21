@@ -77,6 +77,26 @@ namespace Ahc.Club.Ahc.Settings.Services
         {
             await _generalSettingDomainService.DeleteAsync(id);
         }
+
+        public async Task<GeneralSettingDto> Save(GeneralSettingDto dto)
+        {
+            
+            GeneralSetting result = null;
+            var list = await _generalSettingDomainService.GetAllAsync();
+            if(list.Any())
+            {
+                var generalSetting = list.FirstOrDefault();
+                ObjectMapper.Map<GeneralSettingDto, GeneralSetting>(dto, generalSetting);
+                result = await _generalSettingDomainService.UpdateAsync(generalSetting);
+            }
+            else
+            {
+                var generalSetting = ObjectMapper.Map<GeneralSetting>(dto);
+                result = await _generalSettingDomainService.CreateAsync(generalSetting);
+            }
+
+            return ObjectMapper.Map<GeneralSettingDto>(result);
+        }
     }
 }
 

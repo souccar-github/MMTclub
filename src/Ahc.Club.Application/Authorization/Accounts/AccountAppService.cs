@@ -37,7 +37,10 @@ namespace Ahc.Club.Authorization.Accounts
 
         public async Task<RegisterOutput> Register(RegisterInput input)
         {
-            var user = await _userRegistrationManager.RegisterAsync(
+            User user = await _userRegistrationManager.CheckUsernameAlearyTaken(input.UserName);
+            if(user == null)
+            {
+                user = await _userRegistrationManager.RegisterAsync(
                 input.Name,
                 input.Surname,
                 input.EmailAddress,
@@ -46,6 +49,9 @@ namespace Ahc.Club.Authorization.Accounts
                 true // Assumed email address is always confirmed. Change this if you want to implement email confirmation.
             );
 
+            }
+            
+
             var isEmailConfirmationRequiredForLogin = await SettingManager.GetSettingValueAsync<bool>(AbpZeroSettingNames.UserManagement.IsEmailConfirmationRequiredForLogin);
 
             return new RegisterOutput
@@ -53,5 +59,31 @@ namespace Ahc.Club.Authorization.Accounts
                 CanLogin = user.IsActive && (user.IsEmailConfirmed || !isEmailConfirmationRequiredForLogin)
             };
         }
+
+        public async Task<RegisterOutput> RegisterMob(RegisterInputMob input)
+        {
+            User user = await _userRegistrationManager.CheckUsernameAlearyTaken(input.UserName);
+            if (user == null)
+            {
+                user = await _userRegistrationManager.RegisterAsync(
+                input.Name,
+                input.Name,
+                $"{input.UserName}@mmtclub.com",
+                input.UserName,
+                input.Password,
+                true // Assumed email address is always confirmed. Change this if you want to implement email confirmation.
+            );
+
+            }
+
+
+            var isEmailConfirmationRequiredForLogin = await SettingManager.GetSettingValueAsync<bool>(AbpZeroSettingNames.UserManagement.IsEmailConfirmationRequiredForLogin);
+
+            return new RegisterOutput
+            {
+                CanLogin = user.IsActive && (user.IsEmailConfirmed || !isEmailConfirmationRequiredForLogin)
+            };
+        }
+
     }
 }

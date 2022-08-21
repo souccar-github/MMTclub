@@ -17,6 +17,7 @@ namespace Ahc.Club.Ahc.Settings.Services
         Task<UpdateGeneralSettingDto> GetForEditAsync(int id);
         Task<CreateGeneralSettingDto> CreateAsync(CreateGeneralSettingDto generalSetting);
         Task<UpdateGeneralSettingDto> UpdateAsync(UpdateGeneralSettingDto generalSetting);
+        Task<GeneralSettingDto> Save(GeneralSettingDto generalSetting);
         Task DeleteAsync(int id);
     }
 }

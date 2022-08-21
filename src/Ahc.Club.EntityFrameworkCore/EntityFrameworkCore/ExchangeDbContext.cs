@@ -10,6 +10,7 @@ using Ahc.Club.Ahc.Categories;
 using Ahc.Club.Ahc.Gifts;
 using Ahc.Club.Ahc.Levels;
 using Ahc.Club.Ahc.Settings;
+using Ahc.Club.Ahc.Complaints;
 
 namespace Ahc.Club.EntityFrameworkCore
 {
@@ -17,6 +18,7 @@ namespace Ahc.Club.EntityFrameworkCore
     {
         /* Define a DbSet for each entity of the application */
         public DbSet<QrCode> QrCodes { get; set; }
+        public DbSet<QrCodeRequest> QrCodeRequests { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Level> Levels { get; set; }
         public DbSet<Gift> Gifts { get; set; }
@@ -24,6 +26,8 @@ namespace Ahc.Club.EntityFrameworkCore
         public DbSet<Category> Categories { get; set; }
         public DbSet<CategoryNews> CategoryNews { get; set; }
         public DbSet<GeneralSetting> GeneralSettings { get; set; }
+        public DbSet<Complaint> Complaints { get; set; }
+
         public ExchangeDbContext(DbContextOptions<ExchangeDbContext> options)
             : base(options)
         {
