@@ -60,6 +60,13 @@ namespace Ahc.Club.Authorization.Accounts
             };
         }
 
+        public async Task Logout(long id)
+        {
+            var user = UserManager.GetUserById(id);
+            user.FcmToken = null;
+            await CurrentUnitOfWork.SaveChangesAsync();
+        }
+
         public async Task<RegisterOutput> RegisterMob(RegisterInputMob input)
         {
             User user = await _userRegistrationManager.CheckUsernameAlearyTaken(input.UserName);

@@ -411,3 +411,630 @@ INFO  2022-08-21 10:13:08,696 [10   ] c.Infrastructure.ControllerActionInvoker -
 INFO  2022-08-21 10:13:08,698 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
 INFO  2022-08-21 10:13:08,702 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 168.1147ms 200 application/json; charset=utf-8
 INFO  2022-08-21 10:13:08,779 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 206.4569ms 200 application/json;charset=utf-8
+DEBUG 2022-08-21 14:47:14,692 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2022-08-21 14:47:14,707 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2022-08-21 14:47:14,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.Web.Host.Startup.ExchangeWebHostModule, Ahc.Club.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,722 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeWebCoreModule, Ahc.Club.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeApplicationModule, Ahc.Club.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeCoreModule, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.EntityFrameworkCore.ExchangeEntityFrameworkModule, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:14,726 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2022-08-21 14:47:14,765 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-08-21 14:47:14,765 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-08-21 14:47:14,765 [1    ] o.Configuration.LanguageManagementConfig - Converted Exchange (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-08-21 14:47:14,765 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-08-21 14:47:15,019 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Ahc.Club.EntityFrameworkCore.ExchangeDbContext, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-21 14:47:15,404 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2022-08-21 14:47:15,426 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2022-08-21 14:47:15,435 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2022-08-21 14:47:15,440 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Exchange
+DEBUG 2022-08-21 14:47:15,444 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2022-08-21 14:47:15,483 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2022-08-21 14:47:15,504 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Ahc.Club.MultiTenancy.Tenant, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Ahc.Club.Authorization.Users.User, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2022-08-21 14:47:15,538 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2022-08-21 14:47:15,538 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2022-08-21 14:47:15,542 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.CreateUserDto
+DEBUG 2022-08-21 14:47:15,542 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.UserDto
+DEBUG 2022-08-21 14:47:15,542 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2022-08-21 14:47:15,543 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.UserLoginInfoDto
+DEBUG 2022-08-21 14:47:15,543 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Roles.Dto.PermissionDto
+DEBUG 2022-08-21 14:47:15,543 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2022-08-21 14:47:15,543 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.TenantDto
+INFO  2022-08-21 14:47:17,203 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar-SY,ja,zh-Hans
+INFO  2022-08-21 14:47:17,407 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\ayham.almasri\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2022-08-21 14:47:17,442 [1    ] taProtection.KeyManagement.XmlKeyManager - Creating key {7fdfa545-c69d-47a3-945f-5884b0cbba01} with creation date 2022-08-21 12:47:17Z, activation date 2022-08-21 12:47:17Z, and expiration date 2022-11-19 12:47:17Z.
+INFO  2022-08-21 14:47:17,452 [1    ] ion.Repositories.FileSystemXmlRepository - Writing data to file 'C:\Users\ayham.almasri\AppData\Local\ASP.NET\DataProtection-Keys\key-7fdfa545-c69d-47a3-945f-5884b0cbba01.xml'.
+INFO  2022-08-21 14:47:17,469 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2022-08-21 14:47:17,530 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-21 14:47:18,449 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Ahc.Club.Web.Host.Controllers.HomeController (Ahc.Club.Web.Host).
+INFO  2022-08-21 14:47:18,932 [11   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2022-08-21 14:47:18,935 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) in 483.7512ms
+INFO  2022-08-21 14:47:18,935 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-21 14:47:18,950 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1480.7027ms 302 
+INFO  2022-08-21 14:47:18,950 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2022-08-21 14:47:18,967 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.7893ms 301 
+INFO  2022-08-21 14:47:18,970 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2022-08-21 14:47:19,108 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 138.9331ms 200 text/html;charset=utf-8
+INFO  2022-08-21 14:47:19,113 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2022-08-21 14:47:19,115 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2022-08-21 14:47:19,117 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2022-08-21 14:47:19,118 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2022-08-21 14:47:19,119 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2022-08-21 14:47:19,120 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2022-08-21 14:47:19,122 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.9519ms 200 application/javascript; charset=utf-8
+INFO  2022-08-21 14:47:19,124 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2022-08-21 14:47:19,124 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2022-08-21 14:47:19,124 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.9492ms 200 application/javascript
+INFO  2022-08-21 14:47:19,124 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5.3553ms 200 application/javascript
+INFO  2022-08-21 14:47:19,128 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2022-08-21 14:47:19,130 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2022-08-21 14:47:19,130 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2022-08-21 14:47:19,131 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 13.4163ms 200 application/javascript
+INFO  2022-08-21 14:47:19,131 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 18.0229ms 200 text/css
+INFO  2022-08-21 14:47:19,132 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2022-08-21 14:47:19,132 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 17.6282ms 200 application/javascript
+INFO  2022-08-21 14:47:19,185 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 57.543ms 200 text/javascript; charset=UTF-8
+INFO  2022-08-21 14:47:19,488 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2022-08-21 14:47:19,491 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2022-08-21 14:47:19,498 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Ahc.Club.Web.Host.Controllers.AntiForgeryController (Ahc.Club.Web.Host).
+INFO  2022-08-21 14:47:19,512 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 14:47:19,518 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2022-08-21 14:47:19,531 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2022-08-21 14:47:19,533 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2022-08-21 14:47:19,533 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.6231ms 200 image/png
+INFO  2022-08-21 14:47:19,590 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) in 92.2099ms
+INFO  2022-08-21 14:47:19,590 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2022-08-21 14:47:19,591 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 102.7906ms 200 application/json; charset=utf-8
+INFO  2022-08-21 14:47:19,664 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 146.0571ms 200 application/json;charset=utf-8
+INFO  2022-08-21 14:50:24,840 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2022-08-21 14:50:24,842 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-21 14:50:24,848 [18   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Ahc.Club.Web.Host.Controllers.HomeController (Ahc.Club.Web.Host).
+INFO  2022-08-21 14:50:24,859 [18   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2022-08-21 14:50:24,860 [18   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) in 11.7593ms
+INFO  2022-08-21 14:50:24,860 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-21 14:50:24,861 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 21.1317ms 302 
+INFO  2022-08-21 14:50:25,273 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2022-08-21 14:50:25,275 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.1066ms 301 
+INFO  2022-08-21 14:50:25,666 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2022-08-21 14:50:25,670 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3.7355ms 200 text/html;charset=utf-8
+INFO  2022-08-21 14:50:26,052 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/favicon-32x32.png  
+INFO  2022-08-21 14:50:26,054 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.114ms 404 
+INFO  2022-08-21 14:50:39,439 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2022-08-21 14:50:39,441 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-21 14:50:39,444 [18   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Ahc.Club.Web.Host.Controllers.HomeController (Ahc.Club.Web.Host).
+INFO  2022-08-21 14:50:39,449 [18   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2022-08-21 14:50:39,449 [18   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) in 5.5265ms
+INFO  2022-08-21 14:50:39,449 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-21 14:50:39,450 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 11.234ms 302 
+INFO  2022-08-21 14:50:39,893 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2022-08-21 14:50:39,895 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.7659ms 301 
+INFO  2022-08-21 14:50:40,342 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2022-08-21 14:50:40,352 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 9.557ms 200 text/html;charset=utf-8
+INFO  2022-08-21 14:50:40,800 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2022-08-21 14:50:40,805 [24   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2022-08-21 14:50:40,805 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5.0457ms 200 text/css
+INFO  2022-08-21 14:50:40,981 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2022-08-21 14:50:40,981 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2022-08-21 14:50:40,988 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2022-08-21 14:50:40,988 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7.0404ms 200 application/javascript
+INFO  2022-08-21 14:50:40,991 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2022-08-21 14:50:40,992 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10.4975ms 200 application/javascript
+INFO  2022-08-21 14:50:41,048 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2022-08-21 14:50:41,048 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2022-08-21 14:50:41,048 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2022-08-21 14:50:41,049 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 0.7182ms 200 application/javascript; charset=utf-8
+INFO  2022-08-21 14:50:41,050 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2022-08-21 14:50:41,050 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2022-08-21 14:50:41,051 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.6648ms 200 application/javascript
+INFO  2022-08-21 14:50:41,051 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.7545ms 200 application/javascript
+INFO  2022-08-21 14:50:42,526 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2022-08-21 14:50:42,537 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10.8179ms 200 text/javascript; charset=UTF-8
+INFO  2022-08-21 14:50:43,675 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2022-08-21 14:50:43,677 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2022-08-21 14:50:43,680 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Ahc.Club.Web.Host.Controllers.AntiForgeryController (Ahc.Club.Web.Host).
+INFO  2022-08-21 14:50:43,687 [9    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 14:50:43,688 [9    ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) in 7.397ms
+INFO  2022-08-21 14:50:43,688 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2022-08-21 14:50:43,688 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 12.8463ms 200 application/json; charset=utf-8
+INFO  2022-08-21 14:50:43,741 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2022-08-21 14:50:43,742 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2022-08-21 14:50:43,743 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2022-08-21 14:50:43,743 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.1665ms 200 image/png
+INFO  2022-08-21 14:50:43,777 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 35.7559ms 200 application/json;charset=utf-8
+INFO  2022-08-21 14:50:44,288 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2022-08-21 14:50:44,288 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2022-08-21 14:50:44,300 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 11.41ms 200 text/html;charset=utf-8
+INFO  2022-08-21 14:50:44,334 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 46.2906ms 200 application/json;charset=utf-8
+INFO  2022-08-21 14:53:54,268 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/RegisterMob application/json; charset=utf-8 69
+INFO  2022-08-21 14:53:54,270 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Authorization.Accounts.AccountAppService.RegisterMob (Ahc.Club.Application)'
+INFO  2022-08-21 14:53:54,282 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "RegisterMob", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Authorization.Accounts.Dto.RegisterOutput] RegisterMob(Ahc.Club.Authorization.Accounts.Dto.RegisterInputMob) on controller Ahc.Club.Authorization.Accounts.AccountAppService (Ahc.Club.Application).
+INFO  2022-08-21 14:53:54,772 [27   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 14:53:54,773 [27   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Authorization.Accounts.AccountAppService.RegisterMob (Ahc.Club.Application) in 491.0235ms
+INFO  2022-08-21 14:53:54,773 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Authorization.Accounts.AccountAppService.RegisterMob (Ahc.Club.Application)'
+INFO  2022-08-21 14:53:54,773 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 504.7883ms 200 application/json; charset=utf-8
+INFO  2022-08-21 14:54:02,545 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json; charset=utf-8 240
+INFO  2022-08-21 14:54:02,547 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-21 14:54:02,554 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Models.TokenAuth.AuthenticateResultModel] Authenticate(Ahc.Club.Models.TokenAuth.AuthenticateModel) on controller Ahc.Club.Controllers.TokenAuthController (Ahc.Club.Web.Core).
+INFO  2022-08-21 14:54:02,897 [29   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 14:54:02,900 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core) in 345.3606ms
+INFO  2022-08-21 14:54:02,900 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-21 14:54:02,900 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 355.8715ms 200 application/json; charset=utf-8
+INFO  2022-08-21 14:54:05,000 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Home/Get application/json 
+INFO  2022-08-21 14:54:05,024 [31   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 14:54:05,048 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 14:54:05,053 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Ahc.Home.Dto.HomeDto] GetAsync() on controller Ahc.Club.Ahc.Home.HomeAppService (Ahc.Club.Application).
+INFO  2022-08-21 14:54:05,623 [29   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 14:54:05,635 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application) in 581.5406ms
+INFO  2022-08-21 14:54:05,635 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 14:54:05,635 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 635.7597ms 200 application/json; charset=utf-8
+INFO  2022-08-21 14:54:06,194 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Home/Get application/json 
+INFO  2022-08-21 14:54:06,195 [32   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 14:54:06,196 [32   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 14:54:06,199 [32   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Ahc.Home.Dto.HomeDto] GetAsync() on controller Ahc.Club.Ahc.Home.HomeAppService (Ahc.Club.Application).
+INFO  2022-08-21 14:54:06,237 [29   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 14:54:06,237 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application) in 38.4301ms
+INFO  2022-08-21 14:54:06,237 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 14:54:06,238 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 44.2228ms 200 application/json; charset=utf-8
+INFO  2022-08-21 14:54:19,752 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/news/d13eaa22-89be-4063-8684-573b7f57db9f.jfif  
+INFO  2022-08-21 14:54:19,754 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/news/d13eaa22-89be-4063-8684-573b7f57db9f.jfif'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\news\d13eaa22-89be-4063-8684-573b7f57db9f.jfif'
+INFO  2022-08-21 14:54:19,754 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/categories/95f1f7bc-8181-4789-be89-608822e53e7d.PNG  
+INFO  2022-08-21 14:54:19,754 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.0139ms 200 image/pjpeg
+INFO  2022-08-21 14:54:19,754 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/news/fa0b12a4-cd1d-4064-805b-3506bbf54002.jpg  
+INFO  2022-08-21 14:54:19,754 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/categories/3bccc43b-c1ff-4f76-899f-8a425a3ed0b6.PNG  
+INFO  2022-08-21 14:54:19,758 [35   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/categories/3bccc43b-c1ff-4f76-899f-8a425a3ed0b6.PNG'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\categories\3bccc43b-c1ff-4f76-899f-8a425a3ed0b6.PNG'
+INFO  2022-08-21 14:54:19,758 [37   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/news/fa0b12a4-cd1d-4064-805b-3506bbf54002.jpg'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\news\fa0b12a4-cd1d-4064-805b-3506bbf54002.jpg'
+INFO  2022-08-21 14:54:19,758 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3.3969ms 200 image/png
+INFO  2022-08-21 14:54:19,758 [37   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3.7144ms 200 image/jpeg
+INFO  2022-08-21 14:54:19,758 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/categories/95f1f7bc-8181-4789-be89-608822e53e7d.PNG'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\categories\95f1f7bc-8181-4789-be89-608822e53e7d.PNG'
+INFO  2022-08-21 14:54:19,758 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.1578ms 200 image/png
+INFO  2022-08-21 15:06:18,504 [63   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/RegisterMob application/json; charset=utf-8 69
+INFO  2022-08-21 15:06:18,506 [63   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Authorization.Accounts.AccountAppService.RegisterMob (Ahc.Club.Application)'
+INFO  2022-08-21 15:06:18,509 [63   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "RegisterMob", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Authorization.Accounts.Dto.RegisterOutput] RegisterMob(Ahc.Club.Authorization.Accounts.Dto.RegisterInputMob) on controller Ahc.Club.Authorization.Accounts.AccountAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:06:18,540 [63   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:06:18,541 [63   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Authorization.Accounts.AccountAppService.RegisterMob (Ahc.Club.Application) in 31.7589ms
+INFO  2022-08-21 15:06:18,541 [63   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Authorization.Accounts.AccountAppService.RegisterMob (Ahc.Club.Application)'
+INFO  2022-08-21 15:06:18,541 [63   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 37.6522ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:06:20,196 [64   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json; charset=utf-8 240
+INFO  2022-08-21 15:06:20,199 [64   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-21 15:06:20,202 [64   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Models.TokenAuth.AuthenticateResultModel] Authenticate(Ahc.Club.Models.TokenAuth.AuthenticateModel) on controller Ahc.Club.Controllers.TokenAuthController (Ahc.Club.Web.Core).
+INFO  2022-08-21 15:06:20,308 [64   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:06:20,308 [64   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core) in 106.3397ms
+INFO  2022-08-21 15:06:20,308 [64   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-21 15:06:20,309 [64   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 112.5256ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:06:24,834 [60   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Home/Get application/json 
+INFO  2022-08-21 15:06:24,836 [60   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:06:24,842 [66   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:06:24,845 [66   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Ahc.Home.Dto.HomeDto] GetAsync() on controller Ahc.Club.Ahc.Home.HomeAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:06:24,876 [60   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:06:24,877 [60   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application) in 32.4059ms
+INFO  2022-08-21 15:06:24,878 [60   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:06:24,878 [60   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 43.759ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:06:27,172 [64   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Home/Get application/json 
+INFO  2022-08-21 15:06:27,173 [64   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:06:27,174 [64   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:06:27,178 [64   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Ahc.Home.Dto.HomeDto] GetAsync() on controller Ahc.Club.Ahc.Home.HomeAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:06:27,196 [63   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:06:27,197 [63   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application) in 19.1824ms
+INFO  2022-08-21 15:06:27,197 [63   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:06:27,197 [63   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 25.3707ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:06:28,689 [62   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/news/fa0b12a4-cd1d-4064-805b-3506bbf54002.jpg  
+INFO  2022-08-21 15:06:28,690 [62   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/news/fa0b12a4-cd1d-4064-805b-3506bbf54002.jpg'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\news\fa0b12a4-cd1d-4064-805b-3506bbf54002.jpg'
+INFO  2022-08-21 15:06:28,690 [62   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.5729ms 200 image/jpeg
+INFO  2022-08-21 15:06:28,757 [64   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/categories/95f1f7bc-8181-4789-be89-608822e53e7d.PNG  
+INFO  2022-08-21 15:06:28,757 [62   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/categories/3bccc43b-c1ff-4f76-899f-8a425a3ed0b6.PNG  
+INFO  2022-08-21 15:06:28,758 [60   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/categories/3bccc43b-c1ff-4f76-899f-8a425a3ed0b6.PNG'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\categories\3bccc43b-c1ff-4f76-899f-8a425a3ed0b6.PNG'
+INFO  2022-08-21 15:06:28,759 [60   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.8014ms 200 image/png
+INFO  2022-08-21 15:06:28,759 [60   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/categories/95f1f7bc-8181-4789-be89-608822e53e7d.PNG'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\categories\95f1f7bc-8181-4789-be89-608822e53e7d.PNG'
+INFO  2022-08-21 15:06:28,759 [60   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.2389ms 200 image/png
+INFO  2022-08-21 15:06:28,822 [63   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/news/d13eaa22-89be-4063-8684-573b7f57db9f.jfif  
+INFO  2022-08-21 15:06:28,823 [63   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/news/d13eaa22-89be-4063-8684-573b7f57db9f.jfif'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\news\d13eaa22-89be-4063-8684-573b7f57db9f.jfif'
+INFO  2022-08-21 15:06:28,823 [63   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.3336ms 200 image/pjpeg
+INFO  2022-08-21 15:11:23,995 [75   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Home/Get application/json 
+INFO  2022-08-21 15:11:23,995 [73   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Home/Get application/json 
+INFO  2022-08-21 15:11:23,997 [75   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:11:23,997 [73   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:11:23,997 [75   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:11:23,997 [73   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:11:24,000 [75   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Ahc.Home.Dto.HomeDto] GetAsync() on controller Ahc.Club.Ahc.Home.HomeAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:11:24,002 [73   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Ahc.Home.Dto.HomeDto] GetAsync() on controller Ahc.Club.Ahc.Home.HomeAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:11:24,033 [75   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:11:24,033 [78   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:11:24,033 [75   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application) in 31.2633ms
+INFO  2022-08-21 15:11:24,033 [75   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:11:24,033 [78   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application) in 32.9206ms
+INFO  2022-08-21 15:11:24,033 [78   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:11:24,034 [75   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 38.4381ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:11:24,034 [78   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 38.4362ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:11:36,555 [74   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/categories/3bccc43b-c1ff-4f76-899f-8a425a3ed0b6.PNG  
+INFO  2022-08-21 15:11:36,557 [78   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/categories/3bccc43b-c1ff-4f76-899f-8a425a3ed0b6.PNG'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\categories\3bccc43b-c1ff-4f76-899f-8a425a3ed0b6.PNG'
+INFO  2022-08-21 15:11:36,557 [78   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.7964ms 200 image/png
+INFO  2022-08-21 15:11:36,621 [76   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/categories/95f1f7bc-8181-4789-be89-608822e53e7d.PNG  
+INFO  2022-08-21 15:11:36,623 [74   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/categories/95f1f7bc-8181-4789-be89-608822e53e7d.PNG'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\categories\95f1f7bc-8181-4789-be89-608822e53e7d.PNG'
+INFO  2022-08-21 15:11:36,623 [74   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.1152ms 200 image/png
+INFO  2022-08-21 15:11:36,623 [76   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/news/fa0b12a4-cd1d-4064-805b-3506bbf54002.jpg  
+INFO  2022-08-21 15:11:36,623 [74   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/news/d13eaa22-89be-4063-8684-573b7f57db9f.jfif  
+INFO  2022-08-21 15:11:36,625 [74   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/news/d13eaa22-89be-4063-8684-573b7f57db9f.jfif'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\news\d13eaa22-89be-4063-8684-573b7f57db9f.jfif'
+INFO  2022-08-21 15:11:36,625 [77   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/news/fa0b12a4-cd1d-4064-805b-3506bbf54002.jpg'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\news\fa0b12a4-cd1d-4064-805b-3506bbf54002.jpg'
+INFO  2022-08-21 15:11:36,625 [77   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.8114ms 200 image/jpeg
+INFO  2022-08-21 15:11:36,625 [74   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.819ms 200 image/pjpeg
+INFO  2022-08-21 15:52:41,766 [119  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetProfile application/json 
+INFO  2022-08-21 15:52:41,767 [119  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:52:41,771 [119  ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,778 [119  ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Users.Dto.UserProfileDto] GetProfileAsync() on controller Ahc.Club.Users.UserAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:52:41,799 [117  ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:52:41,802 [117  ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application) in 24.4901ms
+INFO  2022-08-21 15:52:41,802 [117  ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,803 [117  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 36.7582ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:52:41,830 [116  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetProfile application/json 
+INFO  2022-08-21 15:52:41,832 [119  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetProfile application/json 
+INFO  2022-08-21 15:52:41,833 [117  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetProfile application/json 
+INFO  2022-08-21 15:52:41,834 [117  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:52:41,834 [116  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:52:41,834 [119  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:52:41,834 [117  ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,834 [116  ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,834 [119  ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,837 [116  ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Users.Dto.UserProfileDto] GetProfileAsync() on controller Ahc.Club.Users.UserAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:52:41,837 [119  ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Users.Dto.UserProfileDto] GetProfileAsync() on controller Ahc.Club.Users.UserAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:52:41,837 [117  ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Users.Dto.UserProfileDto] GetProfileAsync() on controller Ahc.Club.Users.UserAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:52:41,852 [116  ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:52:41,852 [116  ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application) in 14.5858ms
+INFO  2022-08-21 15:52:41,852 [117  ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:52:41,852 [116  ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,852 [117  ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application) in 14.8088ms
+INFO  2022-08-21 15:52:41,852 [117  ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,853 [119  ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:52:41,853 [116  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.4324ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:52:41,853 [119  ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application) in 15.2517ms
+INFO  2022-08-21 15:52:41,853 [119  ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,853 [117  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 19.8247ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:52:41,853 [119  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 21.3482ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:52:41,903 [119  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetProfile application/json 
+INFO  2022-08-21 15:52:41,903 [113  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetProfile application/json 
+INFO  2022-08-21 15:52:41,904 [119  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:52:41,904 [113  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:52:41,904 [119  ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,904 [113  ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,907 [113  ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Users.Dto.UserProfileDto] GetProfileAsync() on controller Ahc.Club.Users.UserAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:52:41,907 [119  ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Users.Dto.UserProfileDto] GetProfileAsync() on controller Ahc.Club.Users.UserAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:52:41,917 [117  ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:52:41,917 [113  ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:52:41,917 [117  ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application) in 9.8013ms
+INFO  2022-08-21 15:52:41,917 [117  ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,917 [113  ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application) in 9.6934ms
+INFO  2022-08-21 15:52:41,917 [113  ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:41,917 [113  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 14.5315ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:52:41,918 [117  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 14.8378ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:52:42,000 [117  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetProfile application/json 
+INFO  2022-08-21 15:52:42,000 [112  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetProfile application/json 
+INFO  2022-08-21 15:52:42,000 [119  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetProfile application/json 
+INFO  2022-08-21 15:52:42,002 [112  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:52:42,002 [117  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:52:42,002 [119  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:52:42,002 [117  ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:42,002 [119  ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:42,002 [112  ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:42,005 [112  ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Users.Dto.UserProfileDto] GetProfileAsync() on controller Ahc.Club.Users.UserAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:52:42,006 [119  ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Users.Dto.UserProfileDto] GetProfileAsync() on controller Ahc.Club.Users.UserAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:52:42,006 [117  ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Users.Dto.UserProfileDto] GetProfileAsync() on controller Ahc.Club.Users.UserAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:52:42,018 [112  ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:52:42,018 [117  ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:52:42,018 [117  ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application) in 12.6221ms
+INFO  2022-08-21 15:52:42,018 [112  ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application) in 12.9034ms
+INFO  2022-08-21 15:52:42,018 [117  ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:42,018 [112  ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:42,019 [112  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 18.7072ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:52:42,019 [117  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 19.0254ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:52:42,023 [111  ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:52:42,023 [111  ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application) in 16.7345ms
+INFO  2022-08-21 15:52:42,023 [111  ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:42,024 [111  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23.6423ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:52:42,299 [111  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetProfile application/json 
+INFO  2022-08-21 15:52:42,300 [111  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:52:42,300 [111  ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:42,303 [111  ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfile", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Users.Dto.UserProfileDto] GetProfileAsync() on controller Ahc.Club.Users.UserAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:52:42,312 [111  ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:52:42,313 [111  ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application) in 9.5561ms
+INFO  2022-08-21 15:52:42,313 [111  ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Users.UserAppService.GetProfileAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:52:42,313 [111  ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 13.8449ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:58:38,061 [97   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/RegisterMob application/json; charset=utf-8 69
+INFO  2022-08-21 15:58:38,061 [97   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Authorization.Accounts.AccountAppService.RegisterMob (Ahc.Club.Application)'
+INFO  2022-08-21 15:58:38,066 [97   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "RegisterMob", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Authorization.Accounts.Dto.RegisterOutput] RegisterMob(Ahc.Club.Authorization.Accounts.Dto.RegisterInputMob) on controller Ahc.Club.Authorization.Accounts.AccountAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:58:38,100 [93   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:58:38,100 [93   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Authorization.Accounts.AccountAppService.RegisterMob (Ahc.Club.Application) in 34.65ms
+INFO  2022-08-21 15:58:38,100 [93   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Authorization.Accounts.AccountAppService.RegisterMob (Ahc.Club.Application)'
+INFO  2022-08-21 15:58:38,101 [93   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 40.2175ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:58:54,434 [97   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json; charset=utf-8 240
+INFO  2022-08-21 15:58:54,435 [97   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-21 15:58:54,437 [97   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Models.TokenAuth.AuthenticateResultModel] Authenticate(Ahc.Club.Models.TokenAuth.AuthenticateModel) on controller Ahc.Club.Controllers.TokenAuthController (Ahc.Club.Web.Core).
+INFO  2022-08-21 15:58:54,541 [97   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:58:54,541 [97   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core) in 103.6824ms
+INFO  2022-08-21 15:58:54,541 [97   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-21 15:58:54,542 [97   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 107.4944ms 200 application/json; charset=utf-8
+INFO  2022-08-21 15:59:03,821 [91   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Home/Get application/json 
+INFO  2022-08-21 15:59:03,822 [91   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 15:59:03,826 [97   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:59:03,829 [97   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Ahc.Home.Dto.HomeDto] GetAsync() on controller Ahc.Club.Ahc.Home.HomeAppService (Ahc.Club.Application).
+INFO  2022-08-21 15:59:03,854 [92   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 15:59:03,855 [92   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application) in 26.1725ms
+INFO  2022-08-21 15:59:03,855 [92   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 15:59:03,855 [92   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 34.6186ms 200 application/json; charset=utf-8
+INFO  2022-08-21 16:01:47,300 [87   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Home/Get application/json 
+INFO  2022-08-21 16:01:47,300 [87   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 16:01:47,301 [87   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 16:01:47,304 [87   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Ahc.Home.Dto.HomeDto] GetAsync() on controller Ahc.Club.Ahc.Home.HomeAppService (Ahc.Club.Application).
+INFO  2022-08-21 16:01:47,328 [88   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 16:01:47,329 [88   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application) in 25.093ms
+INFO  2022-08-21 16:01:47,329 [88   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 16:01:47,329 [88   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 29.7355ms 200 application/json; charset=utf-8
+INFO  2022-08-21 16:01:50,704 [83   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Home/Get application/json 
+INFO  2022-08-21 16:01:50,705 [83   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2022-08-21 16:01:50,705 [83   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 16:01:50,708 [83   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Ahc.Home.Dto.HomeDto] GetAsync() on controller Ahc.Club.Ahc.Home.HomeAppService (Ahc.Club.Application).
+INFO  2022-08-21 16:01:50,740 [84   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-21 16:01:50,740 [84   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application) in 32.1083ms
+INFO  2022-08-21 16:01:50,740 [84   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Home.HomeAppService.GetAsync (Ahc.Club.Application)'
+INFO  2022-08-21 16:01:50,741 [84   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 36.8893ms 200 application/json; charset=utf-8
+DEBUG 2022-08-23 09:55:29,091 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2022-08-23 09:55:29,125 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2022-08-23 09:55:29,139 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.Web.Host.Startup.ExchangeWebHostModule, Ahc.Club.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,141 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeWebCoreModule, Ahc.Club.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,141 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeApplicationModule, Ahc.Club.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,141 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeCoreModule, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,141 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,141 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,141 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,142 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,142 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.EntityFrameworkCore.ExchangeEntityFrameworkModule, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,142 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,142 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,142 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,143 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,143 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,143 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,145 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2022-08-23 09:55:29,188 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-08-23 09:55:29,188 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-08-23 09:55:29,188 [1    ] o.Configuration.LanguageManagementConfig - Converted Exchange (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-08-23 09:55:29,188 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2022-08-23 09:55:29,471 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Ahc.Club.EntityFrameworkCore.ExchangeDbContext, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-08-23 09:55:29,840 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2022-08-23 09:55:29,862 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2022-08-23 09:55:29,871 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2022-08-23 09:55:29,876 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Exchange
+DEBUG 2022-08-23 09:55:29,880 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2022-08-23 09:55:29,919 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2022-08-23 09:55:29,941 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Ahc.Club.MultiTenancy.Tenant, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Ahc.Club.Authorization.Users.User, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2022-08-23 09:55:29,974 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2022-08-23 09:55:29,974 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2022-08-23 09:55:29,978 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.CreateUserDto
+DEBUG 2022-08-23 09:55:29,978 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.UserDto
+DEBUG 2022-08-23 09:55:29,979 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2022-08-23 09:55:29,979 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.UserLoginInfoDto
+DEBUG 2022-08-23 09:55:29,979 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Roles.Dto.PermissionDto
+DEBUG 2022-08-23 09:55:29,979 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2022-08-23 09:55:29,979 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.TenantDto
+INFO  2022-08-23 09:55:31,618 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar-SY,ja,zh-Hans
+INFO  2022-08-23 09:55:31,804 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\ayham.almasri\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2022-08-23 09:55:31,840 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2022-08-23 09:55:31,903 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-23 09:55:32,793 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Ahc.Club.Web.Host.Controllers.HomeController (Ahc.Club.Web.Host).
+INFO  2022-08-23 09:55:33,256 [15   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2022-08-23 09:55:33,259 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) in 463.3803ms
+INFO  2022-08-23 09:55:33,260 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-23 09:55:33,275 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1434.9727ms 302 
+INFO  2022-08-23 09:55:33,275 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2022-08-23 09:55:33,292 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.5581ms 301 
+INFO  2022-08-23 09:55:33,294 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2022-08-23 09:55:33,442 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 147.7475ms 200 text/html;charset=utf-8
+INFO  2022-08-23 09:55:33,445 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2022-08-23 09:55:33,445 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2022-08-23 09:55:33,448 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2022-08-23 09:55:33,448 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2022-08-23 09:55:33,449 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2022-08-23 09:55:33,450 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2022-08-23 09:55:33,452 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.6893ms 200 application/javascript; charset=utf-8
+INFO  2022-08-23 09:55:33,453 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2022-08-23 09:55:33,453 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2022-08-23 09:55:33,453 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.1041ms 200 application/javascript
+INFO  2022-08-23 09:55:33,454 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5.3762ms 200 application/javascript
+INFO  2022-08-23 09:55:33,458 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2022-08-23 09:55:33,458 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 13.3628ms 200 text/css
+INFO  2022-08-23 09:55:33,458 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2022-08-23 09:55:33,458 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10.4706ms 200 application/javascript
+INFO  2022-08-23 09:55:33,460 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2022-08-23 09:55:33,460 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 14.3548ms 200 application/javascript
+INFO  2022-08-23 09:55:33,463 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2022-08-23 09:55:33,513 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 49.9287ms 200 text/javascript; charset=UTF-8
+INFO  2022-08-23 09:55:33,799 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2022-08-23 09:55:33,801 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2022-08-23 09:55:33,811 [11   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Ahc.Club.Web.Host.Controllers.AntiForgeryController (Ahc.Club.Web.Host).
+INFO  2022-08-23 09:55:33,825 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-23 09:55:33,828 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2022-08-23 09:55:33,842 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2022-08-23 09:55:33,844 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2022-08-23 09:55:33,844 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.4522ms 200 image/png
+INFO  2022-08-23 09:55:33,898 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) in 86.7069ms
+INFO  2022-08-23 09:55:33,899 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2022-08-23 09:55:33,899 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 100.2592ms 200 application/json; charset=utf-8
+INFO  2022-08-23 09:55:33,987 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 158.6089ms 200 application/json;charset=utf-8
+INFO  2022-08-23 09:57:05,655 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2022-08-23 09:57:05,656 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-23 09:57:05,659 [11   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Ahc.Club.Web.Host.Controllers.HomeController (Ahc.Club.Web.Host).
+INFO  2022-08-23 09:57:05,668 [11   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2022-08-23 09:57:05,668 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) in 8.6532ms
+INFO  2022-08-23 09:57:05,668 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-23 09:57:05,669 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 14.08ms 302 
+INFO  2022-08-23 09:57:06,163 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2022-08-23 09:57:06,164 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.7792ms 301 
+INFO  2022-08-23 09:57:06,655 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2022-08-23 09:57:06,659 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3.5023ms 200 text/html;charset=utf-8
+INFO  2022-08-23 09:57:07,165 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/favicon-32x32.png  
+INFO  2022-08-23 09:57:07,168 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.8514ms 404 
+INFO  2022-08-23 10:01:25,611 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2022-08-23 10:01:25,613 [34   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-23 10:01:25,616 [34   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Ahc.Club.Web.Host.Controllers.HomeController (Ahc.Club.Web.Host).
+INFO  2022-08-23 10:01:25,626 [34   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2022-08-23 10:01:25,626 [34   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) in 10.1682ms
+INFO  2022-08-23 10:01:25,626 [34   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2022-08-23 10:01:25,627 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.7308ms 302 
+INFO  2022-08-23 10:01:26,314 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2022-08-23 10:01:26,317 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.5708ms 301 
+INFO  2022-08-23 10:01:26,896 [39   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2022-08-23 10:01:26,907 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10.5677ms 200 text/html;charset=utf-8
+INFO  2022-08-23 10:01:27,354 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2022-08-23 10:01:27,359 [34   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2022-08-23 10:01:27,359 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.4234ms 200 text/css
+INFO  2022-08-23 10:01:27,503 [39   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2022-08-23 10:01:27,503 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2022-08-23 10:01:27,504 [39   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 0.5828ms 200 application/javascript; charset=utf-8
+INFO  2022-08-23 10:01:27,512 [38   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2022-08-23 10:01:27,512 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 8.9173ms 200 application/javascript
+INFO  2022-08-23 10:01:27,605 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2022-08-23 10:01:27,605 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2022-08-23 10:01:27,606 [34   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2022-08-23 10:01:27,606 [38   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2022-08-23 10:01:27,607 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2022-08-23 10:01:27,607 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2022-08-23 10:01:27,607 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.0062ms 200 application/javascript
+INFO  2022-08-23 10:01:27,608 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.58ms 200 application/javascript
+INFO  2022-08-23 10:01:27,614 [35   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2022-08-23 10:01:27,614 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7.1606ms 200 application/javascript
+INFO  2022-08-23 10:01:27,615 [42   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 8.6825ms 200 text/javascript; charset=UTF-8
+INFO  2022-08-23 10:01:30,716 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2022-08-23 10:01:30,717 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2022-08-23 10:01:30,720 [33   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Ahc.Club.Web.Host.Controllers.AntiForgeryController (Ahc.Club.Web.Host).
+INFO  2022-08-23 10:01:30,725 [36   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-23 10:01:30,726 [36   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) in 5.8038ms
+INFO  2022-08-23 10:01:30,726 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2022-08-23 10:01:30,726 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10.5433ms 200 application/json; charset=utf-8
+INFO  2022-08-23 10:01:30,848 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2022-08-23 10:01:30,862 [37   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2022-08-23 10:01:30,863 [37   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2022-08-23 10:01:30,863 [37   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.079ms 200 image/png
+INFO  2022-08-23 10:01:30,883 [37   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 35.2399ms 200 application/json;charset=utf-8
+INFO  2022-08-23 10:01:31,665 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2022-08-23 10:01:31,681 [35   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.1765ms 200 text/html;charset=utf-8
+INFO  2022-08-23 10:01:31,869 [37   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2022-08-23 10:01:31,904 [37   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 34.7243ms 200 application/json;charset=utf-8
+INFO  2022-08-23 10:01:55,969 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 55
+INFO  2022-08-23 10:01:55,974 [36   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2022-08-23 10:01:55,974 [36   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://6d03-91-144-21-82.ngrok.io does not have permission to access the resource.
+INFO  2022-08-23 10:01:55,976 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-23 10:01:55,990 [36   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Models.TokenAuth.AuthenticateResultModel] Authenticate(Ahc.Club.Models.TokenAuth.AuthenticateModel) on controller Ahc.Club.Controllers.TokenAuthController (Ahc.Club.Web.Core).
+WARN  2022-08-23 10:01:56,405 [47   ] icrosoft.AspNetCore.Identity.UserManager - Invalid password for user 1.
+WARN  2022-08-23 10:01:56,780 [36   ] Mvc.ExceptionHandling.AbpExceptionFilter - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at Ahc.Club.Controllers.TokenAuthController.GetLoginResultAsync(String usernameOrEmailAddress, String password, String tenancyName) in D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Core\Controllers\TokenAuthController.cs:line 198
+   at Ahc.Club.Controllers.TokenAuthController.Authenticate(AuthenticateModel model) in D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Core\Controllers\TokenAuthController.cs:line 58
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2022-08-23 10:01:56,784 [36   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-23 10:01:56,787 [36   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core) in 797.1168ms
+INFO  2022-08-23 10:01:56,787 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-23 10:01:56,788 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 818.7362ms 500 application/json; charset=utf-8
+INFO  2022-08-23 10:02:05,869 [48   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 55
+INFO  2022-08-23 10:02:05,869 [48   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2022-08-23 10:02:05,869 [48   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://6d03-91-144-21-82.ngrok.io does not have permission to access the resource.
+INFO  2022-08-23 10:02:05,871 [48   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-23 10:02:05,874 [48   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Models.TokenAuth.AuthenticateResultModel] Authenticate(Ahc.Club.Models.TokenAuth.AuthenticateModel) on controller Ahc.Club.Controllers.TokenAuthController (Ahc.Club.Web.Core).
+WARN  2022-08-23 10:02:05,966 [48   ] icrosoft.AspNetCore.Identity.UserManager - Invalid password for user 1.
+WARN  2022-08-23 10:02:05,984 [33   ] Mvc.ExceptionHandling.AbpExceptionFilter - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at Ahc.Club.Controllers.TokenAuthController.GetLoginResultAsync(String usernameOrEmailAddress, String password, String tenancyName) in D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Core\Controllers\TokenAuthController.cs:line 198
+   at Ahc.Club.Controllers.TokenAuthController.Authenticate(AuthenticateModel model) in D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Core\Controllers\TokenAuthController.cs:line 58
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2022-08-23 10:02:05,985 [33   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-23 10:02:05,985 [33   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core) in 110.67ms
+INFO  2022-08-23 10:02:05,985 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-23 10:02:05,986 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 116.9048ms 500 application/json; charset=utf-8
+INFO  2022-08-23 10:02:09,854 [47   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2022-08-23 10:02:09,862 [50   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 8.3845ms 200 text/html;charset=utf-8
+INFO  2022-08-23 10:02:10,322 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2022-08-23 10:02:10,322 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 0.245ms 200 application/javascript; charset=utf-8
+INFO  2022-08-23 10:02:10,412 [47   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2022-08-23 10:02:10,419 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6.9817ms 200 text/javascript; charset=UTF-8
+INFO  2022-08-23 10:02:11,526 [48   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2022-08-23 10:02:11,527 [47   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2022-08-23 10:02:11,528 [47   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2022-08-23 10:02:11,531 [47   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Ahc.Club.Web.Host.Controllers.AntiForgeryController (Ahc.Club.Web.Host).
+INFO  2022-08-23 10:02:11,536 [47   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-23 10:02:11,537 [47   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) in 5.9941ms
+INFO  2022-08-23 10:02:11,537 [47   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2022-08-23 10:02:11,537 [47   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10.1246ms 200 application/json; charset=utf-8
+INFO  2022-08-23 10:02:11,557 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2022-08-23 10:02:11,565 [48   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 39.0692ms 200 application/json;charset=utf-8
+INFO  2022-08-23 10:02:11,592 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 34.4282ms 200 application/json;charset=utf-8
+INFO  2022-08-23 10:02:11,679 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2022-08-23 10:02:11,682 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.3827ms 200 text/html;charset=utf-8
+INFO  2022-08-23 10:02:23,260 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 54
+INFO  2022-08-23 10:02:23,260 [36   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2022-08-23 10:02:23,260 [36   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://6d03-91-144-21-82.ngrok.io does not have permission to access the resource.
+INFO  2022-08-23 10:02:23,261 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-23 10:02:23,264 [36   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Models.TokenAuth.AuthenticateResultModel] Authenticate(Ahc.Club.Models.TokenAuth.AuthenticateModel) on controller Ahc.Club.Controllers.TokenAuthController (Ahc.Club.Web.Core).
+WARN  2022-08-23 10:02:23,393 [48   ] icrosoft.AspNetCore.Identity.UserManager - Invalid password for user 1.
+WARN  2022-08-23 10:02:23,413 [47   ] Mvc.ExceptionHandling.AbpExceptionFilter - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at Ahc.Club.Controllers.TokenAuthController.GetLoginResultAsync(String usernameOrEmailAddress, String password, String tenancyName) in D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Core\Controllers\TokenAuthController.cs:line 198
+   at Ahc.Club.Controllers.TokenAuthController.Authenticate(AuthenticateModel model) in D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Core\Controllers\TokenAuthController.cs:line 58
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2022-08-23 10:02:23,414 [47   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-23 10:02:23,414 [47   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core) in 150.0994ms
+INFO  2022-08-23 10:02:23,414 [47   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-23 10:02:23,415 [47   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 154.5571ms 500 application/json; charset=utf-8
+INFO  2022-08-23 10:02:30,572 [48   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 56
+INFO  2022-08-23 10:02:30,572 [48   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2022-08-23 10:02:30,572 [48   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://6d03-91-144-21-82.ngrok.io does not have permission to access the resource.
+INFO  2022-08-23 10:02:30,573 [48   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-23 10:02:30,576 [48   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Ahc.Club.Models.TokenAuth.AuthenticateResultModel] Authenticate(Ahc.Club.Models.TokenAuth.AuthenticateModel) on controller Ahc.Club.Controllers.TokenAuthController (Ahc.Club.Web.Core).
+WARN  2022-08-23 10:02:30,667 [47   ] icrosoft.AspNetCore.Identity.UserManager - Invalid password for user 1.
+WARN  2022-08-23 10:02:30,684 [36   ] Mvc.ExceptionHandling.AbpExceptionFilter - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at Ahc.Club.Controllers.TokenAuthController.GetLoginResultAsync(String usernameOrEmailAddress, String password, String tenancyName) in D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Core\Controllers\TokenAuthController.cs:line 198
+   at Ahc.Club.Controllers.TokenAuthController.Authenticate(AuthenticateModel model) in D:\Projects\MMT-CLUB\src\Ahc.Club.Web.Core\Controllers\TokenAuthController.cs:line 58
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2022-08-23 10:02:30,685 [36   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2022-08-23 10:02:30,685 [36   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core) in 109.202ms
+INFO  2022-08-23 10:02:30,685 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Controllers.TokenAuthController.Authenticate (Ahc.Club.Web.Core)'
+INFO  2022-08-23 10:02:30,685 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 113.726ms 500 application/json; charset=utf-8
