@@ -32,5 +32,6 @@ namespace Ahc.Club.Authorization.Users
         }
 
         public double Point { get; set; }
+        public string FcmToken { get; set; }
     }
 }

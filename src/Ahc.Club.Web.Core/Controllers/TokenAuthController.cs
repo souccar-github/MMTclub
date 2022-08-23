@@ -29,10 +29,12 @@ namespace Ahc.Club.Controllers
         private readonly TokenAuthConfiguration _configuration;
         private readonly IExternalAuthConfiguration _externalAuthConfiguration;
         private readonly IExternalAuthManager _externalAuthManager;
+        private readonly UserManager _userManager;
         private readonly UserRegistrationManager _userRegistrationManager;
 
         public TokenAuthController(
             LogInManager logInManager,
+            UserManager userManager,
             ITenantCache tenantCache,
             AbpLoginResultTypeHelper abpLoginResultTypeHelper,
             TokenAuthConfiguration configuration,
@@ -42,6 +44,7 @@ namespace Ahc.Club.Controllers
         {
             _logInManager = logInManager;
             _tenantCache = tenantCache;
+            _userManager = userManager;
             _abpLoginResultTypeHelper = abpLoginResultTypeHelper;
             _configuration = configuration;
             _externalAuthConfiguration = externalAuthConfiguration;
@@ -59,6 +62,9 @@ namespace Ahc.Club.Controllers
             );
 
             var accessToken = CreateAccessToken(CreateJwtClaims(loginResult.Identity));
+            var user = _userManager.GetUserById(loginResult.User.Id);
+            user.FcmToken = model.FcmToken;
+            await CurrentUnitOfWork.SaveChangesAsync();
 
             return new AuthenticateResultModel
             {

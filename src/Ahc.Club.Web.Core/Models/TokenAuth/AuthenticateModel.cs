@@ -14,6 +14,7 @@ namespace Ahc.Club.Models.TokenAuth
         [StringLength(AbpUserBase.MaxPlainPasswordLength)]
         [DisableAuditing]
         public string Password { get; set; }
+        public string FcmToken { get; set; }
 
         public bool RememberClient { get; set; }
     }
