@@ -10,6 +10,7 @@ namespace Ahc.Club.Ahc.QrCodes.Services
      {
         IQueryable<QrCode> Get();
         Task<IList<QrCode>> GetAllAsync();
+        Task<IList<QrCode>> GetAllByRequestIdAsync(int requestId);
         Task<QrCode> GetByIdAsync(int id);
         Task<QrCode> CreateAsync(QrCode qrCode);
         Task<QrCode> UpdateAsync(QrCode qrCode);

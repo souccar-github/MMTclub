@@ -77,7 +77,11 @@ namespace Ahc.Club.Ahc.QrCodes.Services
 
             return updatedQrCode;
         }
-        
+
+        public async Task<IList<QrCode>> GetAllByRequestIdAsync(int requestId)
+        {
+            return await _qrCodeRepository.GetAllListAsync(x => x.QrCodeRequestId == requestId);
+        }
     }
 }
 

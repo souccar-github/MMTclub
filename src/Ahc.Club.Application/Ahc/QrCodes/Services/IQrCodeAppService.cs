@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Ahc.Club.Ahc.QrCodes.Dto;
@@ -13,6 +11,7 @@ namespace Ahc.Club.Ahc.QrCodes.Services
     {
         ReadGrudDto Get([FromBody] DataManagerRequest dm);
         Task<IList<QrCodeDto>> GetAllAsync();
+        Task<IList<QrCodeDto>> GetAllByRequestIdAsync(int requestId);
         Task<QrCodeDto> GetByIdAsync(int id);
         Task<UpdateQrCodeDto> GetForEditAsync(int id);
         Task<CreateQrCodeDto> CreateAsync(CreateQrCodeDto qrCode);

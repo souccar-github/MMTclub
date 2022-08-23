@@ -85,7 +85,11 @@ namespace Ahc.Club.Ahc.QrCodes.Services
             return ObjectMapper.Map<QrCodeDto>(updatedQrCode);
         }
 
-        
+        public async Task<IList<QrCodeDto>> GetAllByRequestIdAsync(int requestId)
+        {
+            var qrCodes = await _qrCodeDomainService.GetAllByRequestIdAsync(requestId);
+            return ObjectMapper.Map<List<QrCodeDto>>(qrCodes);
+        }
     }
 }
 
