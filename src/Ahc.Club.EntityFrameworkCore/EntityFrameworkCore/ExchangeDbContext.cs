@@ -22,6 +22,7 @@ namespace Ahc.Club.EntityFrameworkCore
         public DbSet<Product> Products { get; set; }
         public DbSet<Level> Levels { get; set; }
         public DbSet<Gift> Gifts { get; set; }
+        public DbSet<UserGift> UserGifts { get; set; }
         public DbSet<Size> Sizes { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<CategoryNews> CategoryNews { get; set; }

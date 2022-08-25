@@ -17,5 +17,7 @@ namespace Ahc.Club.Ahc.Gifts
         #endregion
 
         public DateTime? Date { get; set; }
+        public UserGiftStatus Status { get; set; }
+        public string Description { get; set; }
     }
 }

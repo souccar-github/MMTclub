@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ahc.Club.Ahc.Gifts.Services
 {
@@ -37,6 +38,21 @@ namespace Ahc.Club.Ahc.Gifts.Services
         {
             var userGift = await _userGiftRepository.FirstOrDefaultAsync(id);
             await _userGiftRepository.DeleteAsync(userGift);
+        }
+
+        public IQueryable<UserGift> GetAllNoneReceived()
+        {
+            return _userGiftRepository.GetAllIncluding(
+                u=>u.User, 
+                g=>g.Gift).Include(g=>g.Gift).ThenInclude(l => l.Level)
+                .Where(x => x.Status != UserGiftStatus.Received);
+        }
+
+        public async Task<UserGift> ChangeStatusAsync(UserGiftStatus status, int id, string description)
+        {
+            var userGift = await _userGiftRepository.GetAsync(id);
+            userGift.Status = (UserGiftStatus)status;
+            return await _userGiftRepository.UpdateAsync(userGift);
         }
     }
 }
