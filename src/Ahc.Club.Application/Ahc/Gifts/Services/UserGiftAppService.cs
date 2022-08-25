@@ -46,6 +46,38 @@ namespace Ahc.Club.Ahc.Gifts.Services
             
             return new ReadGrudDto() { result = data,count = 0, groupDs = groupDs };
         }
+
+        [HttpPost]
+        public ReadGrudDto GetNoneReceived([FromBody] DataManagerRequest dm)
+        {
+            var list = _userGiftDomainService.GetAllNoneReceived().ToList();
+            IEnumerable<ReadUserGiftDto> data = ObjectMapper.Map<List<ReadUserGiftDto>>(list);
+            var operations = new DataOperations();
+            if (dm.Where != null)
+            {
+                data = operations.PerformFiltering(data, dm.Where, "and");
+            }
+
+            IEnumerable groupDs = new List<UserGiftDto>();
+            if (dm.Group != null)
+            {
+                groupDs = operations.PerformGrouping(data, dm.Group);
+            }
+
+            var count = data.Count();
+            if (dm.Skip != 0)
+            {
+                data = operations.PerformSkip(data, dm.Skip);
+            }
+
+            if (dm.Take != 0)
+            {
+                data = operations.PerformTake(data, dm.Take);
+            }
+
+            return new ReadGrudDto() { result = data, count = count, groupDs = groupDs };
+        }
+
         public async Task<IList<UserGiftDto>> GetAllAsync()
         {
             var list = await _userGiftDomainService.GetAllAsync();
@@ -63,7 +95,12 @@ namespace Ahc.Club.Ahc.Gifts.Services
         }
         public async Task<CreateUserGiftDto> CreateAsync(CreateUserGiftDto userGiftDto)
         {
+            var currentUser = await GetCurrentUserAsync();
+
             var userGift = ObjectMapper.Map<UserGift>(userGiftDto);
+            userGift.CreatorUserId = currentUser.Id;
+            userGift.Date = DateTime.Now;
+
             var createdUserGift = await _userGiftDomainService.CreateAsync(userGift);
             return ObjectMapper.Map<CreateUserGiftDto>(createdUserGift);
         }
@@ -76,6 +113,12 @@ namespace Ahc.Club.Ahc.Gifts.Services
         public async Task DeleteAsync(int id)
         {
             await _userGiftDomainService.DeleteAsync(id);
+        }
+
+        public async Task<UserGiftDto> ReceiveGift(ReceiveGiftInputDto input)
+        {
+            var giftUser = await _userGiftDomainService.ChangeStatusAsync(UserGiftStatus.Received, input.id, input.Description);
+            return ObjectMapper.Map<UserGiftDto>(giftUser);
         }
     }
 }

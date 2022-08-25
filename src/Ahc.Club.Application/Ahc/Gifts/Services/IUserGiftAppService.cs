@@ -12,12 +12,14 @@ namespace Ahc.Club.Ahc.Gifts.Services
     public interface IUserGiftAppService : IApplicationService
     {
         ReadGrudDto Get([FromBody] DataManagerRequest dm);
+        ReadGrudDto GetNoneReceived([FromBody] DataManagerRequest dm);
         Task<IList<UserGiftDto>> GetAllAsync();
         Task<UserGiftDto> GetByIdAsync(int id);
         Task<UpdateUserGiftDto> GetForEditAsync(int id);
         Task<CreateUserGiftDto> CreateAsync(CreateUserGiftDto userGift);
         Task<UpdateUserGiftDto> UpdateAsync(UpdateUserGiftDto userGift);
         Task DeleteAsync(int id);
+        Task<UserGiftDto> ReceiveGift(ReceiveGiftInputDto input);
     }
 }
 
