@@ -18,6 +18,10 @@ using Abp.Dependency;
 using Abp.Json;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
+using net_core_api_push_notification_demo.Models;
+using CorePush.Apple;
+using CorePush.Google;
+using net_core_api_push_notification_demo.Services;
 
 namespace Ahc.Club.Web.Host.Startup
 {
@@ -36,6 +40,12 @@ namespace Ahc.Club.Web.Host.Startup
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            var appSettingsSection = _appConfiguration.GetSection("FcmNotification");
+
+            services.AddTransient<INotificationService, NotificationService>();
+            services.AddHttpClient<FcmSender>();
+            services.AddHttpClient<ApnSender>();
+            services.Configure<FcmNotificationSetting>(appSettingsSection);
             //MVC
             services.AddControllersWithViews(
                 options =>
