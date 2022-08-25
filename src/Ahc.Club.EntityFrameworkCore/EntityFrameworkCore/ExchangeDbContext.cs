@@ -11,6 +11,7 @@ using Ahc.Club.Ahc.Gifts;
 using Ahc.Club.Ahc.Levels;
 using Ahc.Club.Ahc.Settings;
 using Ahc.Club.Ahc.Complaints;
+using Ahc.Club.Ahc.Notifications;
 
 namespace Ahc.Club.EntityFrameworkCore
 {
@@ -26,6 +27,7 @@ namespace Ahc.Club.EntityFrameworkCore
         public DbSet<Category> Categories { get; set; }
         public DbSet<CategoryNews> CategoryNews { get; set; }
         public DbSet<GeneralSetting> GeneralSettings { get; set; }
+        public DbSet<FcmNotification> Notifications { get; set; }
         public DbSet<Complaint> Complaints { get; set; }
 
         public ExchangeDbContext(DbContextOptions<ExchangeDbContext> options)
