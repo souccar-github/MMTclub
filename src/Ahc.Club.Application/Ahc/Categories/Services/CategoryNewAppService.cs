@@ -10,22 +10,36 @@ using Ahc.Club.Reflection.Extensions;
 using System.Threading.Tasks;
 using Ahc.Club.Shared.Dto;
 using Ahc.Club.Shared;
+using net_core_api_push_notification_demo.Services;
+using net_core_api_push_notification_demo.Models;
+using Ahc.Club.Authorization.Users;
+using Ahc.Club.Ahc.Notifications;
+using Ahc.Club.Ahc.Notifications.Services;
 
 namespace Ahc.Club.Ahc.Categories.Services
 {
     public class CategoryNewsAppService : ExchangeAppServiceBase, ICategoryNewsAppService
     {
         private readonly ICategoryNewsDomainService _newsDomainService;
+        private readonly IFcmNotificationDomainService _notifiyService;
+        private readonly UserManager _userManager;
+        private readonly INotificationService _notificationService;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IHttpContextAccessor _httpContextAccessor;
         
         public CategoryNewsAppService(
-            ICategoryNewsDomainService newsDomainService, 
-            IWebHostEnvironment webHostEnvironment, 
+            ICategoryNewsDomainService newsDomainService,
+            IFcmNotificationDomainService notifiyService,
+            IWebHostEnvironment webHostEnvironment
+            , INotificationService notificationService, 
+            UserManager userManager,
             IHttpContextAccessor httpContextAccessor)
         {
             _newsDomainService = newsDomainService;
             _webHostEnvironment = webHostEnvironment;
+            _userManager = userManager;
+            _notifiyService = notifiyService;
+            _notificationService = notificationService;
             _httpContextAccessor = httpContextAccessor;
         }
 
@@ -104,6 +118,25 @@ namespace Ahc.Club.Ahc.Categories.Services
             }
 
             var createdCategoryNews = await _newsDomainService.CreateAsync(categoryNews);
+            var users = _userManager.Users.Where(x => x.FcmToken != null && x.FcmToken != "");
+            foreach(var user in users)
+            {
+                await _notificationService.SendNotification(new NotificationModel()
+                {
+                    DeviceId = user.FcmToken,
+                    Title = createdCategoryNews.Title,
+                    Body = createdCategoryNews.Description,
+                    IsAndroiodDevice = true
+                });
+                await _notifiyService.CreateAsync(new FcmNotification() {
+                    Title = createdCategoryNews.Title,
+                    Body = createdCategoryNews.Description,
+                    UserId = user.Id,
+                    DistType = DistType.News,
+                    DistId = createdCategoryNews.Id,
+                });
+            }
+            
             return ObjectMapper.Map<CreateCategoryNewsDto>(createdCategoryNews);
         }
         public async Task<UpdateCategoryNewsDto> UpdateAsync(UpdateCategoryNewsDto newsDto)

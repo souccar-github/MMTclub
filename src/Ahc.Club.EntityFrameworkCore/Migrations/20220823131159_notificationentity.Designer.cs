@@ -4,14 +4,16 @@ using Ahc.Club.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Ahc.Club.Migrations
 {
     [DbContext(typeof(ExchangeDbContext))]
-    partial class ExchangeDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220823131159_notificationentity")]
+    partial class notificationentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1514,61 +1516,6 @@ namespace Ahc.Club.Migrations
                     b.ToTable("Gifts");
                 });
 
-            modelBuilder.Entity("Ahc.Club.Ahc.Gifts.UserGift", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("CreatorUserId")
-                        .HasColumnType("bigint");
-
-                    b.Property<DateTime?>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("DeleterUserId")
-                        .HasColumnType("bigint");
-
-                    b.Property<DateTime?>("DeletionTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("GiftId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("LastModifierUserId")
-                        .HasColumnType("bigint");
-
-                    b.Property<bool>("Received")
-                        .HasColumnType("bit");
-
-                    b.Property<int?>("TenantId")
-                        .HasColumnType("int");
-
-                    b.Property<long?>("UserId")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("GiftId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserGifts");
-                });
-
             modelBuilder.Entity("Ahc.Club.Ahc.Indexes.Size", b =>
                 {
                     b.Property<int>("Id")
@@ -2398,17 +2345,6 @@ namespace Ahc.Club.Migrations
                     b.HasOne("Ahc.Club.Ahc.Levels.Level", "Level")
                         .WithMany("Gifts")
                         .HasForeignKey("LevelId");
-                });
-
-            modelBuilder.Entity("Ahc.Club.Ahc.Gifts.UserGift", b =>
-                {
-                    b.HasOne("Ahc.Club.Ahc.Gifts.Gift", "Gift")
-                        .WithMany()
-                        .HasForeignKey("GiftId");
-
-                    b.HasOne("Ahc.Club.Authorization.Users.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Ahc.Club.Ahc.Products.Product", b =>

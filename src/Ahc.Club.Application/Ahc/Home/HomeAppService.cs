@@ -2,6 +2,8 @@
 using Ahc.Club.Ahc.Categories.Services;
 using Ahc.Club.Ahc.Home.Dto;
 using Ahc.Club.Users;
+using net_core_api_push_notification_demo.Models;
+using net_core_api_push_notification_demo.Services;
 using System.Threading.Tasks;
 
 namespace Ahc.Club.Ahc.Home
@@ -9,16 +11,19 @@ namespace Ahc.Club.Ahc.Home
     public class HomeAppService : ExchangeAppServiceBase, IHomeAppService
     {
         private readonly ICategoryAppService _categoryAppService;
+
         private readonly IUserAppService _userAppService;
 
-        public HomeAppService(ICategoryAppService categoryAppService, IUserAppService userAppService)
+        public HomeAppService(ICategoryAppService categoryAppService, IUserAppService userAppService, INotificationService notificationService)
         {
             _categoryAppService = categoryAppService;
             _userAppService = userAppService;
+
         }
 
         public async Task<HomeDto> GetAsync()
         {
+            
             var profile = await _userAppService.GetProfileAsync();
             var parentCategories = _categoryAppService.GetParent();
 
