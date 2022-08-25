@@ -13,6 +13,7 @@ using Abp.Linq.Extensions;
 using Abp.Localization;
 using Abp.Runtime.Session;
 using Abp.UI;
+using Ahc.Club.Ahc.Gifts.Services;
 using Ahc.Club.Ahc.Levels;
 using Ahc.Club.Ahc.Levels.Services;
 using Ahc.Club.Authorization;
@@ -39,6 +40,7 @@ namespace Ahc.Club.Users
         private readonly IAbpSession _abpSession;
         private readonly LogInManager _logInManager;
         private readonly ILevelAppService _levelAppService;
+        private readonly IUserGiftDomainService _userGiftDomainService;
 
         public UserAppService(
             IRepository<User, long> repository,
@@ -48,7 +50,8 @@ namespace Ahc.Club.Users
             IPasswordHasher<User> passwordHasher,
             IAbpSession abpSession,
             LogInManager logInManager,
-            ILevelAppService levelAppService)
+            ILevelAppService levelAppService,
+            IUserGiftDomainService userGiftDomainService)
             : base(repository)
         {
             _userManager = userManager;
@@ -58,6 +61,7 @@ namespace Ahc.Club.Users
             _abpSession = abpSession;
             _logInManager = logInManager;
             _levelAppService = levelAppService;
+            _userGiftDomainService = userGiftDomainService;
         }
 
         public override async Task<UserDto> CreateAsync(CreateUserDto input)
@@ -279,8 +283,9 @@ namespace Ahc.Club.Users
             var user = await _userManager.GetUserByIdAsync(userId);
 
             var levelDto = _levelAppService.GetByPoint(user.Point);
+            var isActive = !_userGiftDomainService.CheckRequestAny(userId, levelDto.Id);
 
-            return new UserProfileDto(user.FullName, user.UserName, user.Point, levelDto);
+            return new UserProfileDto(user.FullName, user.UserName, user.Point, levelDto, isActive);
             
         }
     }

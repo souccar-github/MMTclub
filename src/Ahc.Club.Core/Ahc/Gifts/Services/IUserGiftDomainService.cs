@@ -10,6 +10,7 @@ namespace Ahc.Club.Ahc.Gifts.Services
      {
         IQueryable<UserGift> Get();
         IQueryable<UserGift> GetAllNoneReceived();
+        bool CheckRequestAny(long userId, int level);
         Task<IList<UserGift>> GetAllAsync();
         Task<UserGift> GetByIdAsync(int id);
         Task<UserGift> CreateAsync(UserGift userGift);

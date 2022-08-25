@@ -54,6 +54,14 @@ namespace Ahc.Club.Ahc.Gifts.Services
             userGift.Status = (UserGiftStatus)status;
             return await _userGiftRepository.UpdateAsync(userGift);
         }
+
+        public bool CheckRequestAny(long userId, int levelId)
+        {
+            return _userGiftRepository.GetAllIncluding(
+                u => u.User,
+                g => g.Gift).Include(g => g.Gift).ThenInclude(l => l.Level)
+                .Any(x => x.UserId == userId && x.Gift.LevelId == levelId);
+        }
     }
 }
 
