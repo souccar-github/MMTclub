@@ -1,5 +1,6 @@
 using AutoMapper;
 using Ahc.Club.Ahc.Levels.Dto;
+using Ahc.Club.Users.Dto;
 
 namespace Ahc.Club.Ahc.Levels.Map
 {
@@ -13,6 +14,7 @@ namespace Ahc.Club.Ahc.Levels.Map
             CreateMap<Level, CreateLevelDto>();
             CreateMap<UpdateLevelDto, Level>();
             CreateMap<Level, UpdateLevelDto>();
+            CreateMap<LevelDto, UserProfileLevelDto>().ForMember(x => x.Gifts, m => m.Ignore());
         }
     }
 }

@@ -7,8 +7,10 @@ namespace Ahc.Club.Ahc.Levels.Dto
     {
         public string name { get; set; }
         public string description { get; set; }
-        public int point { get; set; }
+        public int fromPoint { get; set; }
+        public int toPoint { get; set; }
         public string color { get; set; }
+        public int order { get; set; }
     }
 }
 

@@ -32,7 +32,7 @@ namespace Ahc.Club.Ahc.Home
                 Categories = parentCategories,
                 FullName = profile.FullName,
                 Level = profile.Level,
-                Points = profile.Points,
+                UserPoints = profile.UserPoints,
                 Username = profile.Username
             };
         }

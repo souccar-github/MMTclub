@@ -5,19 +5,18 @@ namespace Ahc.Club.Users.Dto
 {
     public class UserProfileDto : EntityDto<long>
     {
-        public UserProfileDto(string fullName, string username, double points, LevelDto level, bool isActive)
+        public UserProfileDto(string fullName, string username, double points, UserProfileLevelDto level)
         {
             FullName = fullName;
             Username = username;
-            Points = points;
+            UserPoints = points;
             Level = level;
-            IsActive = isActive;
         }
 
         public string FullName { get; set; }
         public string Username { get; set; }
-        public double Points { get; set; }
-        public LevelDto Level { get; set; }
+        public double UserPoints { get; set; }
+        public UserProfileLevelDto Level { get; set; }
         public bool IsActive { get; set; }
 
 

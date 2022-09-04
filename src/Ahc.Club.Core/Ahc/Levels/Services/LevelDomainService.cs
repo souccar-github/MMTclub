@@ -42,8 +42,25 @@ namespace Ahc.Club.Ahc.Levels.Services
         public Level GetByPoint(double point)
         {
             return _levelRepository.GetAllIncluding(c => c.Gifts)
-                .FirstOrDefault(x => x.Point >= point);
+                .Where(x => x.FromPoint <= point && x.ToPoint >= point).OrderBy(x=>x.Order).FirstOrDefault();
+
         }
+
+        public Level GetFirstLevel()
+        {
+            return _levelRepository.GetAllIncluding(c => c.Gifts).OrderBy(x => x.Order).FirstOrDefault();
+        }
+
+        public Level GetLastLevel()
+        {
+            return _levelRepository.GetAllIncluding(c => c.Gifts).OrderByDescending(x => x.Order).FirstOrDefault();
+        }
+
+        public IList<Level> GetAllLevel()
+        {
+            return _levelRepository.GetAllIncluding(c => c.Gifts).OrderBy(x => x.Order).ToList();
+        }
+        
     }
 }
 
