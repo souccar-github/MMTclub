@@ -19,7 +19,7 @@ namespace Ahc.Club.Ahc.Gifts.Services
         Task<CreateUserGiftDto> CreateAsync(CreateUserGiftDto userGift);
         Task<UpdateUserGiftDto> UpdateAsync(UpdateUserGiftDto userGift);
         Task DeleteAsync(int id);
-        Task<UserGiftDto> ReceiveGift(ReceiveGiftInputDto input);
+        Task<UserGiftDto> ChangeStatus(ChangeStatusInputDto input);
     }
 }
 

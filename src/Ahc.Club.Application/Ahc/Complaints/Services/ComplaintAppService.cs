@@ -3,7 +3,9 @@ using Ahc.Club.Ahc.Complaints.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Syncfusion.EJ2.Base;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Ahc.Club.Ahc.Complaints.Services
@@ -27,11 +29,6 @@ namespace Ahc.Club.Ahc.Complaints.Services
             await _complaintDomainService.DeleteAsync(id);
         }
 
-        public ReadGrudDto Get([FromBody] DataManagerRequest dm)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<IList<ComplaintDto>> GetAllAsync()
         {
             var list = await _complaintDomainService.GetAllAsync();
@@ -51,5 +48,42 @@ namespace Ahc.Club.Ahc.Complaints.Services
             var updatedComplaint = await _complaintDomainService.UpdateAsync(complaint);
             return ObjectMapper.Map<ComplaintDto>(updatedComplaint);
         }
+
+        [HttpPost]
+        public ReadGrudDto Get([FromBody] DataManagerRequest dm)
+        {
+            var list = _complaintDomainService.Get().ToList();
+            IEnumerable<ReadComplaintDto> data = ObjectMapper.Map<List<ReadComplaintDto>>(list);
+            var operations = new DataOperations();
+            if (dm.Where != null)
+            {
+                data = operations.PerformFiltering(data, dm.Where, "and");
+            }
+
+            if (dm.Sorted != null)
+            {
+                data = operations.PerformSorting(data, dm.Sorted);
+            }
+
+            IEnumerable groupDs = new List<ReadComplaintDto>();
+            if (dm.Group != null)
+            {
+                groupDs = operations.PerformGrouping(data, dm.Group);
+            }
+
+            var count = data.Count();
+            if (dm.Skip != 0)
+            {
+                data = operations.PerformSkip(data, dm.Skip);
+            }
+
+            if (dm.Take != 0)
+            {
+                data = operations.PerformTake(data, dm.Take);
+            }
+
+            return new ReadGrudDto() { result = data, count = count, groupDs = groupDs };
+        }
+
     }
 }

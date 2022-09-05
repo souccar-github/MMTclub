@@ -16,7 +16,7 @@ namespace Ahc.Club.Ahc.Gifts.Services
         Task<UserGift> CreateAsync(UserGift userGift);
         Task<UserGift> UpdateAsync(UserGift userGift);
         Task DeleteAsync(int id);
-        Task<UserGift> ChangeStatusAsync(UserGiftStatus status, int id, string description);
+        Task<UserGift> ChangeStatusAsync(int status, int id);
     }
 }
 

@@ -289,25 +289,32 @@ namespace Ahc.Club.Users
             if (levels.Any())
             {
                 var currentLevel = levels.FirstOrDefault(x => x.FromPoint <= user.Point && x.ToPoint >= user.Point);
+
+                if(currentLevel == null)
+                    currentLevel = _levelAppService.GetFirstLevel();
+
                 level = new UserProfileLevelDto(currentLevel);
-                foreach(var gift in currentLevel.Gifts)
+                foreach (var gift in currentLevel.Gifts)
                 {
                     var levelGift = new UserProfileLevelGiftDto(gift, false);
                     level.Gifts.Add(levelGift);
                 }
 
-                var previousLevel = levels.FirstOrDefault(x => x.Order == (currentLevel.Order - 1));
-                var isActive = !_userGiftDomainService.CheckRequestAny(userId, previousLevel.Id);
-                if (previousLevel != null)
+                if(currentLevel.Order > 0)
                 {
-                    foreach (var gift in previousLevel.Gifts)
+                    var previousLevel = levels.FirstOrDefault(x => x.Order == (currentLevel.Order - 1));
+                    if (previousLevel != null)
                     {
-                        var levelGift = new UserProfileLevelGiftDto(gift, isActive);
-                        level.Gifts.Add(levelGift);
-                    }
+                        var isActive = !_userGiftDomainService.CheckRequestAny(userId, previousLevel.Id);
+                        foreach (var gift in previousLevel.Gifts)
+                        {
+                            var levelGift = new UserProfileLevelGiftDto(gift, isActive);
+                            level.Gifts.Add(levelGift);
+                        }
 
+                    }
                 }
-                
+
             }
 
             return new UserProfileDto(user.FullName, user.UserName, user.Point, level);

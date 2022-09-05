@@ -6,6 +6,8 @@ namespace Ahc.Club.Ahc.Notifications
 {
     public enum DistType
     {
-        News
+        News,
+        Informe,
+        Other
     }
 }

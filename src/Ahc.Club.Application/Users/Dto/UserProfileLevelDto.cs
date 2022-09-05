@@ -13,13 +13,16 @@ namespace Ahc.Club.Users.Dto
 
         public UserProfileLevelDto(LevelDto level)
         {
-            Gifts = new List<UserProfileLevelGiftDto>();
-            Name = level.Name;
-            Description = level.Description;
-            FromPoint = level.FromPoint;
-            ToPoint = level.ToPoint;
-            Color = level.Color;
-            Order = level.Order;
+            if(level != null)
+            {
+                Gifts = new List<UserProfileLevelGiftDto>();
+                Name = level.Name;
+                Description = level.Description;
+                FromPoint = level.FromPoint;
+                ToPoint = level.ToPoint;
+                Color = level.Color;
+                Order = level.Order;
+            }
         }
         public string Name { get; set; }
         public string Description { get; set; }

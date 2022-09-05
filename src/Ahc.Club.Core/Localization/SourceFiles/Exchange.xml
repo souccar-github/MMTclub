@@ -160,5 +160,6 @@
 		<text name="TheNameAlreadyExist">The name already exist!</text>
 		<text name="ParentCategory">Parent Category</text>
 		<text name="ChildCategories">Child Categories</text>
+		<text name="GiftRequests">Gift Requests</text>
 	</texts>
 </localizationDictionary>
