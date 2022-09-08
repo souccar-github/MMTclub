@@ -120,6 +120,7 @@ namespace Ahc.Club.Ahc.Gifts.Services
             var giftUser = await _userGiftDomainService.ChangeStatusAsync(input.Status, input.Id);
             return ObjectMapper.Map<UserGiftDto>(giftUser);
         }
+    
     }
 }
 
