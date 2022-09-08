@@ -15,6 +15,7 @@ using Abp.Runtime.Session;
 using Abp.UI;
 using Ahc.Club.Ahc.Gifts.Services;
 using Ahc.Club.Ahc.Levels;
+using Ahc.Club.Ahc.Levels.Dto;
 using Ahc.Club.Ahc.Levels.Services;
 using Ahc.Club.Authorization;
 using Ahc.Club.Authorization.Accounts;
@@ -282,10 +283,41 @@ namespace Ahc.Club.Users
             long userId = _abpSession.UserId.Value;
             var user = await _userManager.GetUserByIdAsync(userId);
 
-            var levelDto = _levelAppService.GetByPoint(user.Point);
-            var isActive = !_userGiftDomainService.CheckRequestAny(userId, levelDto.Id);
+            var level = new UserProfileLevelDto();
 
-            return new UserProfileDto(user.FullName, user.UserName, user.Point, levelDto, isActive);
+            var levels = _levelAppService.GetAllLevel();
+            if (levels.Any())
+            {
+                var currentLevel = levels.FirstOrDefault(x => x.FromPoint <= user.Point && x.ToPoint >= user.Point);
+
+                if(currentLevel == null)
+                    currentLevel = _levelAppService.GetFirstLevel();
+
+                level = new UserProfileLevelDto(currentLevel);
+                foreach (var gift in currentLevel.Gifts)
+                {
+                    var levelGift = new UserProfileLevelGiftDto(gift, false);
+                    level.Gifts.Add(levelGift);
+                }
+
+                if(currentLevel.Order > 0)
+                {
+                    var previousLevel = levels.FirstOrDefault(x => x.Order == (currentLevel.Order - 1));
+                    if (previousLevel != null)
+                    {
+                        var isActive = !_userGiftDomainService.CheckRequestAny(userId, previousLevel.Id);
+                        foreach (var gift in previousLevel.Gifts)
+                        {
+                            var levelGift = new UserProfileLevelGiftDto(gift, isActive);
+                            level.Gifts.Add(levelGift);
+                        }
+
+                    }
+                }
+
+            }
+
+            return new UserProfileDto(user.FullName, user.UserName, user.Point, level);
             
         }
     }

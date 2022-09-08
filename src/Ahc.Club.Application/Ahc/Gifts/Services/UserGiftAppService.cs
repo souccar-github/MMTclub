@@ -27,7 +27,7 @@ namespace Ahc.Club.Ahc.Gifts.Services
                 data = operations.PerformFiltering(data, dm.Where, "and");
             }
             
-            IEnumerable groupDs = new List<UserGiftDto>();
+            IEnumerable groupDs = new List<ReadUserGiftDto>();
             if (dm.Group != null)
             {
                 groupDs = operations.PerformGrouping(data, dm.Group);
@@ -44,7 +44,7 @@ namespace Ahc.Club.Ahc.Gifts.Services
                 data = operations.PerformTake(data, dm.Take);
             }
             
-            return new ReadGrudDto() { result = data,count = 0, groupDs = groupDs };
+            return new ReadGrudDto() { result = data,count = count, groupDs = groupDs };
         }
 
         [HttpPost]
@@ -98,7 +98,7 @@ namespace Ahc.Club.Ahc.Gifts.Services
             var currentUser = await GetCurrentUserAsync();
 
             var userGift = ObjectMapper.Map<UserGift>(userGiftDto);
-            userGift.CreatorUserId = currentUser.Id;
+            userGift.UserId = currentUser.Id;
             userGift.Date = DateTime.Now;
 
             var createdUserGift = await _userGiftDomainService.CreateAsync(userGift);
@@ -115,11 +115,12 @@ namespace Ahc.Club.Ahc.Gifts.Services
             await _userGiftDomainService.DeleteAsync(id);
         }
 
-        public async Task<UserGiftDto> ReceiveGift(ReceiveGiftInputDto input)
+        public async Task<UserGiftDto> ChangeStatus(ChangeStatusInputDto input)
         {
-            var giftUser = await _userGiftDomainService.ChangeStatusAsync(UserGiftStatus.Received, input.id, input.Description);
+            var giftUser = await _userGiftDomainService.ChangeStatusAsync(input.Status, input.Id);
             return ObjectMapper.Map<UserGiftDto>(giftUser);
         }
+    
     }
 }
 

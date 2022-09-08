@@ -20,7 +20,7 @@ namespace Ahc.Club.Ahc.Levels.Services
         [HttpPost]
         public ReadGrudDto Get([FromBody] DataManagerRequest dm)
         {
-            var list = _levelDomainService.Get().ToList();
+            var list = _levelDomainService.Get().OrderBy(x => x.Order).ToList();
             IEnumerable<ReadLevelDto> data = ObjectMapper.Map<List<ReadLevelDto>>(list);
             var operations = new DataOperations();
             if (dm.Where != null)
@@ -83,6 +83,30 @@ namespace Ahc.Club.Ahc.Levels.Services
         {
             var level = _levelDomainService.GetByPoint(point);
             return ObjectMapper.Map<LevelDto>(level);
+        }
+
+        public LevelDto GetByOrder(int? order)
+        {
+            if (order == null)
+            {
+                order = _levelDomainService.Get().Min(x => x.Order);
+            }
+
+            var level = _levelDomainService.Get().FirstOrDefault(x => x.Order == order);
+
+            return ObjectMapper.Map<LevelDto>(level);
+        }
+
+        public LevelDto GetFirstLevel()
+        {
+            var level = _levelDomainService.GetFirstLevel();
+            return ObjectMapper.Map<LevelDto>(level);
+        }
+
+        public IList<LevelDto> GetAllLevel()
+        {
+            var levels = _levelDomainService.GetAllLevel();
+            return ObjectMapper.Map<List<LevelDto>>(levels);
         }
     }
 }

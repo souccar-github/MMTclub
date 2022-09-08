@@ -1636,6 +1636,9 @@ namespace Ahc.Club.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("FromPoint")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -1648,10 +1651,13 @@ namespace Ahc.Club.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Point")
+                    b.Property<int>("Order")
                         .HasColumnType("int");
 
                     b.Property<int?>("TenantId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ToPoint")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

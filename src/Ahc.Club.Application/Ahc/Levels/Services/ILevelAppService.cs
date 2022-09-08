@@ -13,12 +13,15 @@ namespace Ahc.Club.Ahc.Levels.Services
     {
         ReadGrudDto Get([FromBody] DataManagerRequest dm);
         Task<IList<LevelDto>> GetAllAsync();
+        IList<LevelDto> GetAllLevel();
+        LevelDto GetByOrder(int? order);
         Task<LevelDto> GetByIdAsync(int id);
         Task<UpdateLevelDto> GetForEditAsync(int id);
         Task<CreateLevelDto> CreateAsync(CreateLevelDto level);
         Task<UpdateLevelDto> UpdateAsync(UpdateLevelDto level);
         Task DeleteAsync(int id);
         LevelDto GetByPoint(double point);
+        LevelDto GetFirstLevel();
     }
 }
 

@@ -11,6 +11,7 @@ namespace Ahc.Club.Ahc.Complaints
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime ComplaintDate { get; set; }
+
         #region User
         public long? UserId { get; set; }
         public virtual User User { get; set; }

@@ -12,7 +12,9 @@ namespace Ahc.Club.Ahc.Levels
         }
         public string Name { get; set; }
         public string Description { get; set; }
-        public int Point { get; set; }
+        public int FromPoint { get; set; }
+        public int ToPoint { get; set; }
+        public int Order { get; set; }
         public string Color { get; set; }
 
         public virtual IList<Gift> Gifts { get; set; }

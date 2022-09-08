@@ -16,7 +16,7 @@ namespace Ahc.Club.Ahc.Gifts.Services
         }
         public IQueryable<UserGift> Get()
         {
-            return _userGiftRepository.GetAll();
+            return _userGiftRepository.GetAllIncluding(u => u.User, g => g.Gift);
         }
         public async Task<IList<UserGift>> GetAllAsync()
         {
@@ -48,7 +48,7 @@ namespace Ahc.Club.Ahc.Gifts.Services
                 .Where(x => x.Status != UserGiftStatus.Received);
         }
 
-        public async Task<UserGift> ChangeStatusAsync(UserGiftStatus status, int id, string description)
+        public async Task<UserGift> ChangeStatusAsync(int status, int id)
         {
             var userGift = await _userGiftRepository.GetAsync(id);
             userGift.Status = (UserGiftStatus)status;
