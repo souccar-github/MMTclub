@@ -10,6 +10,6 @@ namespace Ahc.Club.Ahc.Settings
         public string Instagram { get; set; }
         public string YouTube { get; set; }
         public string Telegram { get; set; }
-        public string Twitter { get; set; }
+        public string MobilePhone { get; set; }
     }
 }

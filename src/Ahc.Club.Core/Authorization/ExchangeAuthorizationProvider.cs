@@ -18,6 +18,11 @@ namespace Ahc.Club.Authorization
             context.CreatePermission(PermissionNames.Pages_Users_ResetPassword, L("ResetPassword"));
             context.CreatePermission(PermissionNames.Pages_Users_ChangePermissions, L("ChangePermissions"));
 
+            //Notifications
+            context.CreatePermission(PermissionNames.Pages_Notifications, L("Notifications"));
+            context.CreatePermission(PermissionNames.Pages_Notifications_Create, L("CreateNewNotification"));
+            context.CreatePermission(PermissionNames.Pages_Notifications_Delete, L("DeleteNotification"));
+
             //Roles
             context.CreatePermission(PermissionNames.Pages_Roles, L("Roles"));
             context.CreatePermission(PermissionNames.Pages_Roles_Create, L("CreateNewRole"));
