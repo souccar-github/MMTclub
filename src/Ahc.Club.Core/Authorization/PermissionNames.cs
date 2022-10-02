@@ -18,6 +18,11 @@
         public const string Pages_Roles_Edit = "Pages.Roles.Edit";
         public const string Pages_Roles_Delete = "Pages.Roles.Delete";
 
+        //Notifications
+        public const string Pages_Notifications = "Pages.Notifications";
+        public const string Pages_Notifications_Create = "Pages.Notifications.Create";
+        public const string Pages_Notifications_Delete = "Pages.Notifications.Delete";
+
 
         //QrCodes
         public const string Pages_QrCodes = "Pages.QrCodes";

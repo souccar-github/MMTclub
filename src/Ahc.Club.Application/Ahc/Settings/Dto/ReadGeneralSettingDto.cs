@@ -11,7 +11,7 @@ namespace Ahc.Club.Ahc.Settings.Dto
         public string instagram { get; set; }
         public string youTube { get; set; }
         public string telegram { get; set; }
-        public string twitter { get; set; }
+        public string mobilePhone { get; set; }
     }
 }
 
