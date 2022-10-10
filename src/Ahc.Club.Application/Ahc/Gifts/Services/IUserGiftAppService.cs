@@ -16,7 +16,7 @@ namespace Ahc.Club.Ahc.Gifts.Services
         Task<IList<UserGiftDto>> GetAllAsync();
         Task<UserGiftDto> GetByIdAsync(int id);
         Task<UpdateUserGiftDto> GetForEditAsync(int id);
-        Task<CreateUserGiftDto> CreateAsync(CreateUserGiftDto userGift);
+        Task<CreateUserGiftDto> CreateAsync(int id);
         Task<UpdateUserGiftDto> UpdateAsync(UpdateUserGiftDto userGift);
         Task DeleteAsync(int id);
         Task<UserGiftDto> ChangeStatus(ChangeStatusInputDto input);

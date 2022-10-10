@@ -6,9 +6,6 @@ namespace Ahc.Club.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "Point",
-                table: "Levels");
 
             migrationBuilder.AddColumn<int>(
                 name: "FromPoint",
@@ -32,13 +29,6 @@ namespace Ahc.Club.Migrations
             migrationBuilder.DropColumn(
                 name: "ToPoint",
                 table: "Levels");
-
-            migrationBuilder.AddColumn<int>(
-                name: "Point",
-                table: "Levels",
-                type: "int",
-                nullable: false,
-                defaultValue: 0);
         }
     }
 }
