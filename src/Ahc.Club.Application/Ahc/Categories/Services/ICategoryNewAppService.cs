@@ -19,6 +19,7 @@ namespace Ahc.Club.Ahc.Categories.Services
         Task<UpdateCategoryNewsDto> GetForEditAsync(int id);
         Task<CreateCategoryNewsDto> CreateAsync(CreateCategoryNewsDto news);
         Task<UpdateCategoryNewsDto> UpdateAsync(UpdateCategoryNewsDto news);
+        Task<IEnumerable<CategoryNewsDto>> GetAllForMobAsync(CategoryNewsPagedResult input);
         Task DeleteAsync(int id);
     }
 }

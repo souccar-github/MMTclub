@@ -29,7 +29,8 @@ namespace Ahc.Club.Ahc.Categories.Services
         }
         public async Task<IList<CategoryNews>> GetAllAsync()
         {
-            return await _newsRepository.GetAllListAsync();
+            var news = await _newsRepository.GetAllListAsync();
+            return news.OrderByDescending(x => x.CreationTime).ToList();
         }
         public async Task<CategoryNews> GetByIdAsync(int id)
         {

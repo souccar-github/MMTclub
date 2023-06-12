@@ -91,7 +91,7 @@ namespace Ahc.Club.Ahc.QrCodes.Services
                 // Generate QrCode
                 for (int i = 0; i < qrCodeRequestDto.Count; i++)
                 {
-                    var code = CreateQrCode();
+                    var code = CreateQrCode(createdQrCodeRequest, i);
                     var qrCode = new QrCode()
                     {
                         ProductId =qrCodeRequest.ProductId,
@@ -119,9 +119,9 @@ namespace Ahc.Club.Ahc.QrCodes.Services
             await _qrCodeRequestDomainService.DeleteAsync(id);
         }
 
-        private string CreateQrCode()
+        private string CreateQrCode(QrCodeRequest qrCodeRequest,int i)
         {
-            var code = Guid.NewGuid().ToString();
+            var code = $"{i}{qrCodeRequest.ProductId}{qrCodeRequest.Id}{qrCodeRequest.Date.ToString("ddMMyy")}";
             var rootPath = _webHostEnvironment.WebRootPath;
             using (QRCodeGenerator qrGenerator = new QRCodeGenerator())
             using (QRCodeData qrCodeData = qrGenerator.CreateQrCode(code, QRCodeGenerator.ECCLevel.Q))

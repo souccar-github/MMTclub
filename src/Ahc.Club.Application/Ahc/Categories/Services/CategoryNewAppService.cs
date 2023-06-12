@@ -83,6 +83,18 @@ namespace Ahc.Club.Ahc.Categories.Services
             var news = await _newsDomainService.GetByIdAsync(id);
             return ObjectMapper.Map<CategoryNewsDto>(news);
         }
+
+        public async Task<IEnumerable<CategoryNewsDto>> GetAllForMobAsync(CategoryNewsPagedResult input)
+        {
+            IEnumerable<CategoryNewsDto> news = await GetAllAsync();
+            if (!string.IsNullOrEmpty(input.Keyword))
+            {
+                news = news.Where(x => x.Title.Contains(input.Keyword));
+            }
+
+            news.Skip(input.Skip * input.Take).Take(input.Take);
+            return news;
+        }
         public async Task<UpdateCategoryNewsDto> GetForEditAsync(int id)
         {
             var news = await _newsDomainService.GetByIdAsync(id);
