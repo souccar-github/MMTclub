@@ -20,8 +20,8 @@
 
         //Notifications
         public const string Pages_Notifications = "Pages.Notifications";
-        public const string Pages_Notifications_Create = "Pages.Notifications.Create";
-        public const string Pages_Notifications_Delete = "Pages.Notifications.Delete";
+        public const string Actions_Notifications_Create = "Actions.Notifications.Create";
+        public const string Actions_Notifications_Delete = "Actions.Notifications.Delete";
 
 
         //QrCodes

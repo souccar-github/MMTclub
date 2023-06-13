@@ -7,6 +7,7 @@ namespace Ahc.Club.Users.Dto
     {
         public UserProfileLevelGiftDto(GiftDto gift, bool isActive)
         {
+            Id = gift.Id;
             Name = gift.Name;
             Description = gift.Description;
             Image = gift.Image;

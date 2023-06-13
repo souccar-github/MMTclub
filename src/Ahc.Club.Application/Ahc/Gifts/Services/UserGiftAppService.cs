@@ -93,11 +93,10 @@ namespace Ahc.Club.Ahc.Gifts.Services
             var userGift = await _userGiftDomainService.GetByIdAsync(id);
             return ObjectMapper.Map<UpdateUserGiftDto>(userGift);
         }
-        public async Task<CreateUserGiftDto> CreateAsync(CreateUserGiftDto userGiftDto)
+        public async Task<CreateUserGiftDto> CreateAsync(int id)
         {
             var currentUser = await GetCurrentUserAsync();
-
-            var userGift = ObjectMapper.Map<UserGift>(userGiftDto);
+            var userGift = new UserGift(){ GiftId = id };
             userGift.UserId = currentUser.Id;
             userGift.Date = DateTime.Now;
 

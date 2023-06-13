@@ -20,14 +20,15 @@ namespace Ahc.Club.Authorization
 
             //Notifications
             context.CreatePermission(PermissionNames.Pages_Notifications, L("Notifications"));
-            context.CreatePermission(PermissionNames.Pages_Notifications_Create, L("CreateNewNotification"));
-            context.CreatePermission(PermissionNames.Pages_Notifications_Delete, L("DeleteNotification"));
+            context.CreatePermission(PermissionNames.Actions_Notifications_Create, L("CreateNewNotification"));
+            context.CreatePermission(PermissionNames.Actions_Notifications_Delete, L("DeleteNotification"));
 
             //Roles
             context.CreatePermission(PermissionNames.Pages_Roles, L("Roles"));
             context.CreatePermission(PermissionNames.Pages_Roles_Create, L("CreateNewRole"));
             context.CreatePermission(PermissionNames.Pages_Roles_Edit, L("EditRole"));
             context.CreatePermission(PermissionNames.Pages_Roles_Delete, L("DeleteRole"));
+
 
             //QrCodes
             context.CreatePermission(PermissionNames.Pages_QrCodes, L("QrCode"));
