@@ -91,8 +91,10 @@ namespace Ahc.Club.Ahc.Categories.Services
             {
                 news = news.Where(x => x.Title.Contains(input.Keyword));
             }
-
-            news.Skip(input.Skip * input.Take).Take(input.Take);
+            else
+            {
+                news = news.Skip(input.Skip * input.Take).Take(input.Take);
+            }
             return news;
         }
         public async Task<UpdateCategoryNewsDto> GetForEditAsync(int id)

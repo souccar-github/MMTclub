@@ -6,6 +6,7 @@ using Ahc.Club.Ahc.Notifications.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Syncfusion.EJ2.Base;
 using System.Collections;
+using Ahc.Club.Ahc.Products;
 
 namespace Ahc.Club.Ahc.Notifications.Services
 {
@@ -51,9 +52,10 @@ namespace Ahc.Club.Ahc.Notifications.Services
             var list = await _fcmNotificationDomainService.GetAllAsync();
             return ObjectMapper.Map<IList<FcmNotificationDto>>(list);
         }
-        public async Task<IList<FcmNotificationDto>> GetMobileAllAsync(long id)
+        public async Task<IList<FcmNotificationDto>> GetMobileAllAsync(long id, int skip, int take)
         {
             var list = await _fcmNotificationDomainService.GetAllAsync();
+            list = list.Skip(skip * take).Take(take).ToList();
             return ObjectMapper.Map<IList<FcmNotificationDto>>(list.Where(x=>x.UserId == id));
         }
         public async Task<FcmNotificationDto> GetByIdAsync(int id)

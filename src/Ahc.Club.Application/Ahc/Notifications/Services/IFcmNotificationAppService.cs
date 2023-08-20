@@ -13,7 +13,7 @@ namespace Ahc.Club.Ahc.Notifications.Services
     {
         ReadGrudDto Get([FromBody] DataManagerRequest dm);
         Task<IList<FcmNotificationDto>> GetAllAsync();
-        Task<IList<FcmNotificationDto>> GetMobileAllAsync(long id);
+        Task<IList<FcmNotificationDto>> GetMobileAllAsync(long id, int skip, int take);
         Task<FcmNotificationDto> GetByIdAsync(int id);
         Task<UpdateFcmNotificationDto> GetForEditAsync(int id);
         Task<CreateFcmNotificationDto> CreateAsync(CreateFcmNotificationDto fcmNotification);

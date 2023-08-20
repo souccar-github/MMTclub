@@ -136,7 +136,7 @@ namespace Ahc.Club.Ahc.Products.Services
             await _productDomainService.DeleteAsync(id);
         }
 
-        public IList<ProductDto> GetProducts(int? categoryId, string keyword)
+        public IList<ProductDto> GetProducts(int? categoryId, string keyword, int skip,int take)
         {
             //var  products = _productDomainService.Get().Where(x =>
             //(categoryId != null && x.CategoryId == categoryId) &&
@@ -152,6 +152,10 @@ namespace Ahc.Club.Ahc.Products.Services
             if (!string.IsNullOrEmpty(keyword))
             {
                 products = products.Where(x => x.Name.ToLower().Contains(keyword.ToLower()));
+            }
+            if(categoryId == null)
+            {
+                products = products.Skip(skip * take).Take(take);
             }
 
             return ObjectMapper.Map<List<ProductDto>>(products);
