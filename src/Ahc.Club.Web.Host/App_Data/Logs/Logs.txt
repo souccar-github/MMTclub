@@ -10856,3 +10856,354 @@ INFO  2023-06-12 09:47:49,153 [7    ] .Mvc.Infrastructure.ObjectResultExecutor -
 INFO  2023-06-12 09:47:49,156 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application) in 26.8565ms
 INFO  2023-06-12 09:47:49,158 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application)'
 INFO  2023-06-12 09:47:49,161 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 59.9655ms 200 application/json; charset=utf-8
+DEBUG 2023-06-13 12:33:17,413 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2023-06-13 12:33:17,571 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2023-06-13 12:33:17,584 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.Web.Host.Startup.ExchangeWebHostModule, Ahc.Club.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,585 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeWebCoreModule, Ahc.Club.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,585 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeApplicationModule, Ahc.Club.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeCoreModule, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,587 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.EntityFrameworkCore.ExchangeEntityFrameworkModule, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,587 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,587 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,587 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,587 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,588 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,588 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:17,590 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2023-06-13 12:33:17,741 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:33:17,741 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:33:17,741 [1    ] o.Configuration.LanguageManagementConfig - Converted Exchange (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:33:17,741 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:33:18,304 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Ahc.Club.EntityFrameworkCore.ExchangeDbContext, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:33:19,324 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2023-06-13 12:33:19,357 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2023-06-13 12:33:19,367 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2023-06-13 12:33:19,374 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Exchange
+DEBUG 2023-06-13 12:33:19,379 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2023-06-13 12:33:19,566 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2023-06-13 12:33:19,677 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Ahc.Club.MultiTenancy.Tenant, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Ahc.Club.Authorization.Users.User, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2023-06-13 12:33:19,729 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2023-06-13 12:33:19,729 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2023-06-13 12:33:19,735 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.CreateUserDto
+DEBUG 2023-06-13 12:33:19,735 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.UserDto
+DEBUG 2023-06-13 12:33:19,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2023-06-13 12:33:19,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.UserLoginInfoDto
+DEBUG 2023-06-13 12:33:19,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Roles.Dto.PermissionDto
+DEBUG 2023-06-13 12:33:19,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2023-06-13 12:33:19,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.TenantDto
+INFO  2023-06-13 12:33:22,062 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar-SY,ja,zh-Hans
+INFO  2023-06-13 12:33:22,530 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\is.06\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2023-06-13 12:33:22,592 [1    ] Microsoft.AspNetCore.Server.Kestrel      - Overriding endpoints defined in UseKestrel() because PreferHostingUrls is set to true. Binding to address(es) 'http://127.0.0.1:32445' instead.
+INFO  2023-06-13 12:33:22,789 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 DEBUG http://localhost:21021/  0
+INFO  2023-06-13 12:33:22,789 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2023-06-13 12:33:22,804 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.2186ms 200 
+INFO  2023-06-13 12:33:22,967 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:33:26,257 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Ahc.Club.Web.Host.Controllers.HomeController (Ahc.Club.Web.Host).
+INFO  2023-06-13 12:33:27,263 [9    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) - Validation state: Valid
+INFO  2023-06-13 12:33:27,268 [9    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.2976ms.
+INFO  2023-06-13 12:33:27,448 [11   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2023-06-13 12:33:27,454 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) in 1191.7187ms
+INFO  2023-06-13 12:33:27,456 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:33:27,468 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4681.3872ms 302 
+INFO  2023-06-13 12:33:27,497 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2023-06-13 12:33:27,666 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 168.6369ms 200 text/html;charset=utf-8
+INFO  2023-06-13 12:33:27,693 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2023-06-13 12:33:27,700 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4.6418ms 200 application/javascript; charset=utf-8
+INFO  2023-06-13 12:33:27,704 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2023-06-13 12:33:27,829 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 126.3066ms 200 text/javascript; charset=UTF-8
+INFO  2023-06-13 12:33:27,876 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2023-06-13 12:33:27,881 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:33:27,890 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Ahc.Club.Web.Host.Controllers.AntiForgeryController (Ahc.Club.Web.Host).
+INFO  2023-06-13 12:33:27,918 [4    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) - Validation state: Valid
+INFO  2023-06-13 12:33:27,934 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2023-06-13 12:33:27,945 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 24.3624ms.
+INFO  2023-06-13 12:33:27,961 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-13 12:33:28,078 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) in 184.4478ms
+INFO  2023-06-13 12:33:28,080 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:33:28,082 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 205.8565ms 200 application/json; charset=utf-8
+INFO  2023-06-13 12:33:28,144 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 223.1878ms 200 application/json;charset=utf-8
+DEBUG 2023-06-13 12:38:21,558 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2023-06-13 12:38:21,609 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2023-06-13 12:38:21,623 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.Web.Host.Startup.ExchangeWebHostModule, Ahc.Club.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeWebCoreModule, Ahc.Club.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeApplicationModule, Ahc.Club.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeCoreModule, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.EntityFrameworkCore.ExchangeEntityFrameworkModule, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:21,628 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2023-06-13 12:38:21,688 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:38:21,688 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:38:21,688 [1    ] o.Configuration.LanguageManagementConfig - Converted Exchange (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:38:21,688 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:38:22,040 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Ahc.Club.EntityFrameworkCore.ExchangeDbContext, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:38:23,047 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2023-06-13 12:38:23,073 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2023-06-13 12:38:23,084 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2023-06-13 12:38:23,091 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Exchange
+DEBUG 2023-06-13 12:38:23,096 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2023-06-13 12:38:23,267 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2023-06-13 12:38:23,368 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Ahc.Club.MultiTenancy.Tenant, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Ahc.Club.Authorization.Users.User, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2023-06-13 12:38:23,413 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2023-06-13 12:38:23,413 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2023-06-13 12:38:23,417 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.CreateUserDto
+DEBUG 2023-06-13 12:38:23,418 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.UserDto
+DEBUG 2023-06-13 12:38:23,418 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2023-06-13 12:38:23,418 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.UserLoginInfoDto
+DEBUG 2023-06-13 12:38:23,435 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Roles.Dto.PermissionDto
+DEBUG 2023-06-13 12:38:23,435 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2023-06-13 12:38:23,435 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.TenantDto
+INFO  2023-06-13 12:38:25,564 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar-SY,ja,zh-Hans
+INFO  2023-06-13 12:38:25,865 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\is.06\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2023-06-13 12:38:25,906 [1    ] Microsoft.AspNetCore.Server.Kestrel      - Overriding endpoints defined in UseKestrel() because PreferHostingUrls is set to true. Binding to address(es) 'http://127.0.0.1:4672' instead.
+INFO  2023-06-13 12:38:25,996 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 DEBUG http://localhost:21021/  0
+INFO  2023-06-13 12:38:25,996 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2023-06-13 12:38:26,007 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 12.328ms 200 
+INFO  2023-06-13 12:38:26,103 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:38:29,596 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Ahc.Club.Web.Host.Controllers.HomeController (Ahc.Club.Web.Host).
+INFO  2023-06-13 12:38:30,567 [4    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) - Validation state: Valid
+INFO  2023-06-13 12:38:30,572 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.2876ms.
+INFO  2023-06-13 12:38:30,733 [5    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2023-06-13 12:38:30,739 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) in 1137.9333ms
+INFO  2023-06-13 12:38:30,741 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:38:30,753 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4759.9864ms 302 
+INFO  2023-06-13 12:38:30,780 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2023-06-13 12:38:30,916 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 135.1201ms 200 text/html;charset=utf-8
+INFO  2023-06-13 12:38:30,934 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2023-06-13 12:38:30,942 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7.9343ms 200 application/javascript; charset=utf-8
+INFO  2023-06-13 12:38:30,946 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2023-06-13 12:38:31,049 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 104.5735ms 200 text/javascript; charset=UTF-8
+INFO  2023-06-13 12:38:31,129 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2023-06-13 12:38:31,135 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:38:31,146 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Ahc.Club.Web.Host.Controllers.AntiForgeryController (Ahc.Club.Web.Host).
+INFO  2023-06-13 12:38:31,167 [4    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) - Validation state: Valid
+INFO  2023-06-13 12:38:31,168 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2023-06-13 12:38:31,182 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 11.7051ms.
+INFO  2023-06-13 12:38:31,198 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-13 12:38:31,312 [10   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) in 163.1723ms
+INFO  2023-06-13 12:38:31,315 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:38:31,317 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 188.5552ms 200 application/json; charset=utf-8
+INFO  2023-06-13 12:38:31,369 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 202.3275ms 200 application/json;charset=utf-8
+INFO  2023-06-13 12:39:09,922 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Product/GetProducts  
+INFO  2023-06-13 12:39:09,959 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application)'
+INFO  2023-06-13 12:39:09,979 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IList`1[Ahc.Club.Ahc.Products.Dto.ProductDto] GetProducts(System.Nullable`1[System.Int32], System.String, Int32, Int32) on controller Ahc.Club.Ahc.Products.Services.ProductAppService (Ahc.Club.Application).
+INFO  2023-06-13 12:39:10,629 [5    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application) - Validation state: Valid
+INFO  2023-06-13 12:39:10,725 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 94.2241ms.
+INFO  2023-06-13 12:39:10,749 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-13 12:39:10,774 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application) in 792.5992ms
+INFO  2023-06-13 12:39:10,777 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application)'
+INFO  2023-06-13 12:39:10,780 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 857.4737ms 200 application/json; charset=utf-8
+INFO  2023-06-13 12:39:27,717 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Product/GetProducts?skip=0&take=3  
+INFO  2023-06-13 12:39:27,734 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application)'
+INFO  2023-06-13 12:39:27,744 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IList`1[Ahc.Club.Ahc.Products.Dto.ProductDto] GetProducts(System.Nullable`1[System.Int32], System.String, Int32, Int32) on controller Ahc.Club.Ahc.Products.Services.ProductAppService (Ahc.Club.Application).
+INFO  2023-06-13 12:39:27,784 [5    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application) - Validation state: Valid
+INFO  2023-06-13 12:39:27,797 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 10.8958ms.
+INFO  2023-06-13 12:39:27,809 [4    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-13 12:39:27,815 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application) in 67.1243ms
+INFO  2023-06-13 12:39:27,818 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application)'
+INFO  2023-06-13 12:39:27,821 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 102.5047ms 200 application/json; charset=utf-8
+INFO  2023-06-13 12:39:52,192 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Product/GetProducts?skip=0&take=3  
+INFO  2023-06-13 12:39:52,196 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application)'
+INFO  2023-06-13 12:39:52,207 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IList`1[Ahc.Club.Ahc.Products.Dto.ProductDto] GetProducts(System.Nullable`1[System.Int32], System.String, Int32, Int32) on controller Ahc.Club.Ahc.Products.Services.ProductAppService (Ahc.Club.Application).
+INFO  2023-06-13 12:39:52,236 [5    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application) - Validation state: Valid
+INFO  2023-06-13 12:40:41,319 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 49081.0144ms.
+INFO  2023-06-13 12:40:41,338 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-13 12:40:41,341 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application) in 49131.4843ms
+INFO  2023-06-13 12:40:41,343 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application)'
+INFO  2023-06-13 12:40:41,345 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 49152.8579ms 200 application/json; charset=utf-8
+INFO  2023-06-13 12:41:14,464 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/CategoryNews/GetAllForMob?Skip=0&Take=3  
+INFO  2023-06-13 12:41:14,468 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application)'
+INFO  2023-06-13 12:41:14,487 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAllForMob", controller = "CategoryNews"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[Ahc.Club.Ahc.Categories.Dto.CategoryNewsDto]] GetAllForMobAsync(Ahc.Club.Ahc.Categories.Dto.CategoryNewsPagedResult) on controller Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService (Ahc.Club.Application).
+INFO  2023-06-13 12:41:14,959 [4    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application) - Validation state: Valid
+INFO  2023-06-13 12:41:15,011 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 49.3559ms.
+INFO  2023-06-13 12:41:15,024 [30   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-13 12:41:15,029 [30   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application) in 539.4112ms
+INFO  2023-06-13 12:41:15,031 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application)'
+INFO  2023-06-13 12:41:15,034 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 570.0038ms 200 application/json; charset=utf-8
+INFO  2023-06-13 12:41:24,485 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/CategoryNews/GetAllForMob?Skip=0&Take=1  
+INFO  2023-06-13 12:41:24,495 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application)'
+INFO  2023-06-13 12:41:24,506 [11   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAllForMob", controller = "CategoryNews"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[Ahc.Club.Ahc.Categories.Dto.CategoryNewsDto]] GetAllForMobAsync(Ahc.Club.Ahc.Categories.Dto.CategoryNewsPagedResult) on controller Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService (Ahc.Club.Application).
+INFO  2023-06-13 12:41:24,529 [11   ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application) - Validation state: Valid
+INFO  2023-06-13 12:41:24,544 [30   ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 12.8482ms.
+INFO  2023-06-13 12:41:24,556 [30   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-13 12:41:24,559 [30   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application) in 50.8197ms
+INFO  2023-06-13 12:41:24,562 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application)'
+INFO  2023-06-13 12:41:24,564 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 79.332ms 200 application/json; charset=utf-8
+INFO  2023-06-13 12:51:21,404 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/CategoryNews/GetAllForMob?Skip=0&Take=1  
+INFO  2023-06-13 12:51:21,407 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application)'
+INFO  2023-06-13 12:51:21,421 [11   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAllForMob", controller = "CategoryNews"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[Ahc.Club.Ahc.Categories.Dto.CategoryNewsDto]] GetAllForMobAsync(Ahc.Club.Ahc.Categories.Dto.CategoryNewsPagedResult) on controller Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService (Ahc.Club.Application).
+INFO  2023-06-13 12:51:21,447 [11   ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application) - Validation state: Valid
+INFO  2023-06-13 12:51:21,456 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 6.8697ms.
+INFO  2023-06-13 12:51:21,464 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-13 12:51:21,466 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application) in 44.0017ms
+INFO  2023-06-13 12:51:21,468 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application)'
+INFO  2023-06-13 12:51:21,470 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 66.4345ms 200 application/json; charset=utf-8
+INFO  2023-06-13 12:51:29,089 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/CategoryNews/GetAllForMob?Skip=0&Take=1  
+INFO  2023-06-13 12:51:29,093 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application)'
+INFO  2023-06-13 12:51:29,105 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAllForMob", controller = "CategoryNews"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[Ahc.Club.Ahc.Categories.Dto.CategoryNewsDto]] GetAllForMobAsync(Ahc.Club.Ahc.Categories.Dto.CategoryNewsPagedResult) on controller Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService (Ahc.Club.Application).
+INFO  2023-06-13 12:51:29,134 [4    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application) - Validation state: Valid
+DEBUG 2023-06-13 12:52:08,617 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2023-06-13 12:52:08,669 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2023-06-13 12:52:08,684 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.Web.Host.Startup.ExchangeWebHostModule, Ahc.Club.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,685 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeWebCoreModule, Ahc.Club.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,685 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeApplicationModule, Ahc.Club.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,685 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeCoreModule, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,686 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,686 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,686 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,686 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,686 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.EntityFrameworkCore.ExchangeEntityFrameworkModule, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,687 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,687 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,687 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,687 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,687 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,687 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:08,689 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2023-06-13 12:52:08,754 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:52:08,754 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:52:08,754 [1    ] o.Configuration.LanguageManagementConfig - Converted Exchange (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:52:08,754 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 12:52:09,145 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Ahc.Club.EntityFrameworkCore.ExchangeDbContext, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 12:52:10,048 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2023-06-13 12:52:10,072 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2023-06-13 12:52:10,082 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2023-06-13 12:52:10,088 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Exchange
+DEBUG 2023-06-13 12:52:10,094 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2023-06-13 12:52:10,267 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2023-06-13 12:52:10,382 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Ahc.Club.MultiTenancy.Tenant, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Ahc.Club.Authorization.Users.User, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2023-06-13 12:52:10,443 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2023-06-13 12:52:10,443 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2023-06-13 12:52:10,448 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.CreateUserDto
+DEBUG 2023-06-13 12:52:10,448 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.UserDto
+DEBUG 2023-06-13 12:52:10,449 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2023-06-13 12:52:10,449 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.UserLoginInfoDto
+DEBUG 2023-06-13 12:52:10,449 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Roles.Dto.PermissionDto
+DEBUG 2023-06-13 12:52:10,449 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2023-06-13 12:52:10,449 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.TenantDto
+INFO  2023-06-13 12:52:12,497 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar-SY,ja,zh-Hans
+INFO  2023-06-13 12:52:12,788 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\is.06\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2023-06-13 12:52:12,828 [1    ] Microsoft.AspNetCore.Server.Kestrel      - Overriding endpoints defined in UseKestrel() because PreferHostingUrls is set to true. Binding to address(es) 'http://127.0.0.1:16199' instead.
+INFO  2023-06-13 12:52:12,944 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2023-06-13 12:52:12,944 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 DEBUG http://localhost:21021/  0
+INFO  2023-06-13 12:52:12,955 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 12.5404ms 200 
+INFO  2023-06-13 12:52:13,053 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:52:16,345 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Ahc.Club.Web.Host.Controllers.HomeController (Ahc.Club.Web.Host).
+INFO  2023-06-13 12:52:17,338 [4    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) - Validation state: Valid
+INFO  2023-06-13 12:52:17,344 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.2946ms.
+INFO  2023-06-13 12:52:17,504 [11   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2023-06-13 12:52:17,510 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) in 1161.1695ms
+INFO  2023-06-13 12:52:17,513 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:52:17,524 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4582.2242ms 302 
+INFO  2023-06-13 12:52:17,550 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2023-06-13 12:52:17,673 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 121.8597ms 200 text/html;charset=utf-8
+INFO  2023-06-13 12:52:17,689 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2023-06-13 12:52:17,695 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6.5628ms 200 application/javascript; charset=utf-8
+INFO  2023-06-13 12:52:17,702 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2023-06-13 12:52:17,809 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 109.368ms 200 text/javascript; charset=UTF-8
+INFO  2023-06-13 12:52:17,840 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2023-06-13 12:52:17,845 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:52:17,854 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Ahc.Club.Web.Host.Controllers.AntiForgeryController (Ahc.Club.Web.Host).
+INFO  2023-06-13 12:52:17,875 [4    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) - Validation state: Valid
+INFO  2023-06-13 12:52:17,877 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2023-06-13 12:52:17,891 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 12.1381ms.
+INFO  2023-06-13 12:52:17,911 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-13 12:52:18,020 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) in 162.4533ms
+INFO  2023-06-13 12:52:18,022 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2023-06-13 12:52:18,024 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 185.1563ms 200 application/json; charset=utf-8
+INFO  2023-06-13 12:52:18,082 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 206.776ms 200 application/json;charset=utf-8
+INFO  2023-06-13 12:52:48,350 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/CategoryNews/GetAllForMob?Skip=0&Take=1  
+INFO  2023-06-13 12:52:48,357 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application)'
+INFO  2023-06-13 12:52:48,376 [10   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAllForMob", controller = "CategoryNews"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[Ahc.Club.Ahc.Categories.Dto.CategoryNewsDto]] GetAllForMobAsync(Ahc.Club.Ahc.Categories.Dto.CategoryNewsPagedResult) on controller Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService (Ahc.Club.Application).
+INFO  2023-06-13 12:52:49,258 [10   ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Ahc.Categories.Services.CategoryNewsAppService.GetAllForMobAsync (Ahc.Club.Application) - Validation state: Valid
+DEBUG 2023-06-13 13:31:18,878 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2023-06-13 13:31:18,938 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2023-06-13 13:31:18,962 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.Web.Host.Startup.ExchangeWebHostModule, Ahc.Club.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeWebCoreModule, Ahc.Club.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeApplicationModule, Ahc.Club.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.ExchangeCoreModule, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Ahc.Club.EntityFrameworkCore.ExchangeEntityFrameworkModule, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,969 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,969 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,970 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,970 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,970 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:18,973 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2023-06-13 13:31:19,095 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 13:31:19,095 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 13:31:19,095 [1    ] o.Configuration.LanguageManagementConfig - Converted Exchange (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 13:31:19,095 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-06-13 13:31:19,681 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Ahc.Club.EntityFrameworkCore.ExchangeDbContext, Ahc.Club.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-06-13 13:31:20,860 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2023-06-13 13:31:20,889 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2023-06-13 13:31:20,901 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2023-06-13 13:31:20,907 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Exchange
+DEBUG 2023-06-13 13:31:20,912 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2023-06-13 13:31:21,091 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2023-06-13 13:31:21,195 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Ahc.Club.MultiTenancy.Tenant, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Ahc.Club.Authorization.Users.User, Ahc.Club.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2023-06-13 13:31:21,239 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2023-06-13 13:31:21,239 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2023-06-13 13:31:21,244 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.CreateUserDto
+DEBUG 2023-06-13 13:31:21,244 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Users.Dto.UserDto
+DEBUG 2023-06-13 13:31:21,244 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2023-06-13 13:31:21,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Sessions.Dto.UserLoginInfoDto
+DEBUG 2023-06-13 13:31:21,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.Roles.Dto.PermissionDto
+DEBUG 2023-06-13 13:31:21,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2023-06-13 13:31:21,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Ahc.Club.MultiTenancy.Dto.TenantDto
+INFO  2023-06-13 13:31:23,340 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar-SY,ja,zh-Hans
+INFO  2023-06-13 13:31:23,638 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\is.06\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2023-06-13 13:31:23,678 [1    ] Microsoft.AspNetCore.Server.Kestrel      - Overriding endpoints defined in UseKestrel() because PreferHostingUrls is set to true. Binding to address(es) 'http://127.0.0.1:27965' instead.
+INFO  2023-06-13 13:31:23,958 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 DEBUG http://localhost:21021/  0
+INFO  2023-06-13 13:31:23,958 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2023-06-13 13:31:23,971 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 13.5382ms 200 
+INFO  2023-06-13 13:31:24,073 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2023-06-13 13:31:27,480 [11   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Ahc.Club.Web.Host.Controllers.HomeController (Ahc.Club.Web.Host).
+INFO  2023-06-13 13:31:28,479 [11   ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) - Validation state: Valid
+INFO  2023-06-13 13:31:28,484 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.2826ms.
+INFO  2023-06-13 13:31:28,643 [12   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2023-06-13 13:31:28,649 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host) in 1163.7623ms
+INFO  2023-06-13 13:31:28,651 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.HomeController.Index (Ahc.Club.Web.Host)'
+INFO  2023-06-13 13:31:28,663 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4707.0521ms 302 
+INFO  2023-06-13 13:31:28,691 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2023-06-13 13:31:28,826 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 134.4429ms 200 text/html;charset=utf-8
+INFO  2023-06-13 13:31:28,843 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_framework/aspnetcore-browser-refresh.js  
+INFO  2023-06-13 13:31:28,851 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6.5735ms 200 application/javascript; charset=utf-8
+INFO  2023-06-13 13:31:28,857 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/_vs/browserLink  
+INFO  2023-06-13 13:31:28,977 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 122.3667ms 200 text/javascript; charset=UTF-8
+INFO  2023-06-13 13:31:29,004 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2023-06-13 13:31:29,009 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2023-06-13 13:31:29,017 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Ahc.Club.Web.Host.Controllers.AntiForgeryController (Ahc.Club.Web.Host).
+INFO  2023-06-13 13:31:29,039 [5    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) - Validation state: Valid
+INFO  2023-06-13 13:31:29,041 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2023-06-13 13:31:29,053 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 10.8054ms.
+INFO  2023-06-13 13:31:29,109 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-13 13:31:29,207 [10   ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host) in 187.2692ms
+INFO  2023-06-13 13:31:29,209 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Web.Host.Controllers.AntiForgeryController.SetCookie (Ahc.Club.Web.Host)'
+INFO  2023-06-13 13:31:29,211 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 207.6281ms 200 application/json; charset=utf-8
+INFO  2023-06-13 13:31:29,265 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 224.9746ms 200 application/json;charset=utf-8
+INFO  2023-06-13 13:31:54,478 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Product/GetProducts?skip=0&take=2  
+INFO  2023-06-13 13:31:54,486 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application)'
+INFO  2023-06-13 13:31:54,512 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IList`1[Ahc.Club.Ahc.Products.Dto.ProductDto] GetProducts(System.Nullable`1[System.Int32], System.String, Int32, Int32) on controller Ahc.Club.Ahc.Products.Services.ProductAppService (Ahc.Club.Application).
+INFO  2023-06-13 13:31:55,160 [5    ] c.Infrastructure.ControllerActionInvoker - Executing action method Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application) - Validation state: Valid
+INFO  2023-06-13 13:32:00,072 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4910.0403ms.
+INFO  2023-06-13 13:32:00,098 [4    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2023-06-13 13:32:00,112 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application) in 5597.2312ms
+INFO  2023-06-13 13:32:00,114 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Ahc.Club.Ahc.Products.Services.ProductAppService.GetProducts (Ahc.Club.Application)'
+INFO  2023-06-13 13:32:00,118 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5637.7808ms 200 application/json; charset=utf-8
